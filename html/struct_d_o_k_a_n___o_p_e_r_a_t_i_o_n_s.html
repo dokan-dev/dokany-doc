@@ -825,7 +825,7 @@ Data Fields</h2></td></tr>
 
 <p>CreateFile Dokan API callback. </p>
 <p>CreateFile is called each time a request is made on a file system object.</p>
-<p>In case <code>OPEN_ALWAYS</code> &amp; <code>CREATE_ALWAYS</code> are opening successfully a already existing file, you have to <code>SetLastError(ERROR_ALREADY_EXISTS)</code> </p>
+<p>In case <code>OPEN_ALWAYS</code> &amp; <code>CREATE_ALWAYS</code> are opening successfully a already existing file, you have to return <code>STATUS_OBJECT_NAME_COLLISION</code> instead of <code>STATUS_SUCCESS</code> . This will inform Dokan that the file has been opened and not created during the request.</p>
 <p>If the file is a directory, CreateFile is also called. In this case, CreateFile should return <code>STATUS_SUCCESS</code> when that directory can be opened and <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a59e9f25b2df70b7b94c2e1ffcd3df840">DOKAN_FILE_INFO.IsDirectory</a> has to be set to <code>TRUE</code>.</p>
 <p><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO.Context</a> can be use to store Data (like <code>HANDLE</code>) that can be retrieved in all other request related to the Context</p>
 <dl class="params"><dt>Parameters</dt><dd>
