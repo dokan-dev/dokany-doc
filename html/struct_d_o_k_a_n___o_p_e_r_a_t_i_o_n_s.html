@@ -247,6 +247,7 @@ Data Fields</h2></td></tr>
 
 <p>DeleteDirectory Dokan API callback. </p>
 <p>Check if it is possible to delete a directory.</p>
+<p>DeleteDirectory will also be called with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
 <p>You should not delete the Directory in DeleteDirectory, but instead you must only check whether you can delete the file or not, and return <code>STATUS_SUCCESS</code> (when you can delete it) or appropriate error codes such as <code>STATUS_ACCESS_DENIED</code>, <code>STATUS_OBJECT_PATH_NOT_FOUND</code>, or <code>STATUS_DIRECTORY_NOT_EMPTY</code>.</p>
 <p>When you return <code>STATUS_SUCCESS</code>, you get a Cleanup call afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code> and only then you have to actually delete the file being closed</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -272,6 +273,7 @@ Data Fields</h2></td></tr>
 
 <p>DeleteFile Dokan API callback. </p>
 <p>Check if it is possible to delete a file.</p>
+<p>DeleteFile will also be called with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
 <p>You should not delete the file in DeleteFile, but instead you must only check whether you can delete the file or not, and return <code>STATUS_SUCCESS</code> (when you can delete it) or appropriate error codes such as <code>STATUS_ACCESS_DENIED</code> or <code>STATUS_OBJECT_NAME_NOT_FOUND</code>.</p>
 <p>When you return <code>STATUS_SUCCESS</code>, you get a Cleanup call afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code> and only then you have to actually delete the file being closed</p>
 <dl class="params"><dt>Parameters</dt><dd>
