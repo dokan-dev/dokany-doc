@@ -142,6 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2272a3d50a93ee7f18ee524266c2ec14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga2272a3d50a93ee7f18ee524266c2ec14">DokanMapKernelToUserCreateFileFlags</a> (ULONG FileAttributes, ULONG CreateOptions, ULONG CreateDisposition, DWORD *outFileAttributesAndFlags, DWORD *outCreationDisposition)</td></tr>
 <tr class="memdesc:ga2272a3d50a93ee7f18ee524266c2ec14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">DOKAN_OPERATIONS::ZwCreateFile</a> parameters to <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx">CreateFile</a> parameters.  <a href="#ga2272a3d50a93ee7f18ee524266c2ec14">More...</a><br /></td></tr>
 <tr class="separator:ga2272a3d50a93ee7f18ee524266c2ec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f3b98a833c1f6cbbb51ee10cf1ca444"><td class="memItemLeft" align="right" valign="top">ACCESS_MASK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga1f3b98a833c1f6cbbb51ee10cf1ca444">DokanMapStandardToGenericAccess</a> (ACCESS_MASK DesiredAccess)</td></tr>
+<tr class="memdesc:ga1f3b98a833c1f6cbbb51ee10cf1ca444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IRP_MJ_CREATE DesiredAccess to generic rights.  <a href="#ga1f3b98a833c1f6cbbb51ee10cf1ca444">More...</a><br /></td></tr>
+<tr class="separator:ga1f3b98a833c1f6cbbb51ee10cf1ca444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1bcba8145ee5205cd41fa5eebdffaa82"><td class="memItemLeft" align="right" valign="top">NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga1bcba8145ee5205cd41fa5eebdffaa82">DokanNtStatusFromWin32</a> (DWORD Error)</td></tr>
 <tr class="memdesc:ga1bcba8145ee5205cd41fa5eebdffaa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert WIN32 error to NTSTATUS.  <a href="#ga1bcba8145ee5205cd41fa5eebdffaa82">More...</a><br /></td></tr>
 <tr class="separator:ga1bcba8145ee5205cd41fa5eebdffaa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,6 +420,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx">CreateFile function (MSDN)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1f3b98a833c1f6cbbb51ee10cf1ca444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ACCESS_MASK DokanMapStandardToGenericAccess </td>
+          <td>(</td>
+          <td class="paramtype">ACCESS_MASK&#160;</td>
+          <td class="paramname"><em>DesiredAccess</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert IRP_MJ_CREATE DesiredAccess to generic rights. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DesiredAccess</td><td>Standard rights to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New DesiredAccess with generic rights. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/windows/hardware/drivers/ifs/access-mask">Access Mask (MSDN)</a> </dd></dl>
 
 </div>
 </div>
