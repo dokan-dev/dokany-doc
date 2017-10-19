@@ -182,9 +182,9 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dokan API callbacks interface. </p>
-<p><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html" title="Dokan API callbacks interface. ">DOKAN_OPERATIONS</a> is a struct of callbacks that describe all Dokan API operation that will be called when Windows access to the filesystem.</p>
+<p><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html" title="Dokan API callbacks interface. ">DOKAN_OPERATIONS</a> is a struct of callbacks that describe all Dokan API operations that will be called when Windows access to the filesystem.</p>
 <p>If an error occurs, return NTSTATUS (<a href="https://support.microsoft.com/en-us/kb/113996">https://support.microsoft.com/en-us/kb/113996</a>). Win32 Error can be converted to <code>NTSTATUS</code> with <a class="el" href="group___dokan.html#ga1bcba8145ee5205cd41fa5eebdffaa82">DokanNtStatusFromWin32</a></p>
-<p>All this callbacks can be set to <code>NULL</code> or return <code>STATUS_NOT_IMPLEMENTED</code> if you dont want to support one of them. Be aware that returning such value to important callbacks such as <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a> / <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a92457133b49740e54142183f90efd723" title="ReadFile Dokan API callback. ">DOKAN_OPERATIONS.ReadFile</a> / ... would make the filesystem not working or unstable. </p>
+<p>All callbacks can be set to <code>NULL</code> or return <code>STATUS_NOT_IMPLEMENTED</code> if supporting one of them is not desired. Be aware that returning such values to important callbacks such as <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a> / <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a92457133b49740e54142183f90efd723" title="ReadFile Dokan API callback. ">DOKAN_OPERATIONS.ReadFile</a> / ... would make the filesystem not work or become unstable. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a2780a352d1d83104843971bc551aa643"></a>
 <div class="memitem">
@@ -198,7 +198,7 @@ Data Fields</h2></td></tr>
 
 <p>Cleanup Dokan API callback. </p>
 <p>Cleanup request before <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a8cec45a9afcc0fc737fb765eb97c639d">CloseFile</a> is called.</p>
-<p>When <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> is <code>TRUE</code>, you must delete the file in Cleanup. See DeleteFile documentation for explanation.</p>
+<p>When <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> is <code>TRUE</code>, the file in Cleanup must be deleted. See DeleteFile documentation for explanation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -224,7 +224,7 @@ Data Fields</h2></td></tr>
 
 <p>CloseFile Dokan API callback. </p>
 <p>Clean remaining Context</p>
-<p>CloseFile is called at the end of the life of the context. Remainings in <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO::Context</a> has to be cleared before return.</p>
+<p>CloseFile is called at the end of the life of the context. Anything remaining in <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO::Context</a> must be cleared before returning.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -248,8 +248,8 @@ Data Fields</h2></td></tr>
 <p>DeleteDirectory Dokan API callback. </p>
 <p>Check if it is possible to delete a directory.</p>
 <p>DeleteDirectory will also be called with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
-<p>You should not delete the Directory in DeleteDirectory, but instead you must only check whether you can delete the file or not, and return <code>STATUS_SUCCESS</code> (when you can delete it) or appropriate error codes such as <code>STATUS_ACCESS_DENIED</code>, <code>STATUS_OBJECT_PATH_NOT_FOUND</code>, or <code>STATUS_DIRECTORY_NOT_EMPTY</code>.</p>
-<p>When you return <code>STATUS_SUCCESS</code>, you get a Cleanup call afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code> and only then you have to actually delete the file being closed</p>
+<p>The Directory in DeleteDirectory should not be deleted, but instead must be checked as to whether or not it can be deleted, and <code>STATUS_SUCCESS</code> should be returned (when it can be deleted) or appropriate error codes, such as <code>STATUS_ACCESS_DENIED</code>, <code>STATUS_OBJECT_PATH_NOT_FOUND</code>, or <code>STATUS_DIRECTORY_NOT_EMPTY</code>, should be returned.</p>
+<p>When <code>STATUS_SUCCESS</code> is returned, a Cleanup call is received afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code>. Only then must the closing file be deleted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -274,8 +274,8 @@ Data Fields</h2></td></tr>
 <p>DeleteFile Dokan API callback. </p>
 <p>Check if it is possible to delete a file.</p>
 <p>DeleteFile will also be called with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
-<p>You should not delete the file in DeleteFile, but instead you must only check whether you can delete the file or not, and return <code>STATUS_SUCCESS</code> (when you can delete it) or appropriate error codes such as <code>STATUS_ACCESS_DENIED</code> or <code>STATUS_OBJECT_NAME_NOT_FOUND</code>.</p>
-<p>When you return <code>STATUS_SUCCESS</code>, you get a Cleanup call afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code> and only then you have to actually delete the file being closed</p>
+<p>The file in DeleteFile should not be deleted, but instead the file must be checked as to whether or not it can be deleted, and <code>STATUS_SUCCESS</code> should be returned (when it can be deleted) or appropriate error codes, such as <code>STATUS_ACCESS_DENIED</code> or <code>STATUS_OBJECT_NAME_NOT_FOUND</code>, should be returned.</p>
+<p>When <code>STATUS_SUCCESS</code> is returned, a Cleanup call is received afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code>. Only then must the closing file be deleted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -301,7 +301,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>FindFiles Dokan API callback. </p>
-<p>List all files in the path requested <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0f280feb3cbff134e997bec6d6db5171">DOKAN_OPERATIONS::FindFilesWithPattern</a> is checking first. If it is not implemented or returns <code>STATUS_NOT_IMPLEMENTED</code>, then FindFiles is called, if implemented.</p>
+<p>List all files in the requested path <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0f280feb3cbff134e997bec6d6db5171">DOKAN_OPERATIONS::FindFilesWithPattern</a> is checked first. If it is not implemented or returns <code>STATUS_NOT_IMPLEMENTED</code>, then FindFiles is called, if implemented.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -331,7 +331,7 @@ Data Fields</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">PathName</td><td>Path requested by the Kernel on the FileSystem. </td></tr>
     <tr><td class="paramname">SearchPattern</td><td>Search pattern. </td></tr>
-    <tr><td class="paramname">FillFindData</td><td>Callback that has to be called with PWIN32_FIND_DATAW that contain file information. </td></tr>
+    <tr><td class="paramname">FillFindData</td><td>Callback that has to be called with PWIN32_FIND_DATAW that contains file information. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
   </dd>
@@ -353,7 +353,7 @@ Data Fields</h2></td></tr>
 
 <p>FindStreams Dokan API callback. </p>
 <p>Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga2b4ad209c39c04c593ded24fb36cb631">DOKAN_OPTION_ALT_STREAM</a> is enabled.</p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the version in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. The version must be specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -400,7 +400,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetDiskFreeSpace Dokan API callback. </p>
-<p>Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread.</p>
+<p>Retrieves information about the amount of space that is available on a disk volume. It consits of the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread.</p>
 <p>Neither GetDiskFreeSpace nor <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a3eb6be7abc4aa9f5868fb8cb52ff4172">GetVolumeInformation</a> save the <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO.Context</a>. Before these methods are called, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">ZwCreateFile</a> may not be called. (ditto <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a8cec45a9afcc0fc737fb765eb97c639d">CloseFile</a> and <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643">Cleanup</a>)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -429,7 +429,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>GetFileInformation Dokan API callback. </p>
-<p>Get specific informations on a file.</p>
+<p>Get specific information on a file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -455,7 +455,7 @@ Data Fields</h2></td></tr>
 <p>GetFileSecurity Dokan API callback. </p>
 <p>Get specified information about the security of a file or directory.</p>
 <p>Return <code>STATUS_BUFFER_OVERFLOW</code> if buffer size is too small.</p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. The version must be specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -487,7 +487,7 @@ Data Fields</h2></td></tr>
 <p>GetVolumeInformation Dokan API callback. </p>
 <p>Retrieves information about the file system and volume associated with the specified root directory.</p>
 <p>Neither GetVolumeInformation nor GetDiskFreeSpace save the <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO::Context</a>. Before these methods are called, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">ZwCreateFile</a> may not be called. (ditto <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a8cec45a9afcc0fc737fb765eb97c639d">CloseFile</a> and <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643">Cleanup</a>)</p>
-<p><code>FILE_READ_ONLY_VOLUME</code> is automatically added to the FileSystemFlags if <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gaec347fdb574bc347ace4de85ea513978">DOKAN_OPTION_WRITE_PROTECT</a> was specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html" title="Dokan mount options used to describe dokan device behavior. ">DOKAN_OPTIONS</a> when the volume was mounted.</p>
+<p><code>FILE_READ_ONLY_VOLUME</code> is automatically added to the FileSystemFlags if <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gaec347fdb574bc347ace4de85ea513978">DOKAN_OPTION_WRITE_PROTECT</a> was specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html" title="Dokan mount options used to describe Dokan device behavior. ">DOKAN_OPTIONS</a> when the volume was mounted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">VolumeNameBuffer</td><td>A pointer to a buffer that receives the name of a specified volume. </td></tr>
@@ -523,7 +523,7 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
-    <tr><td class="paramname">ByteOffset</td><td>Offset from where the lock has to be proceed. </td></tr>
+    <tr><td class="paramname">ByteOffset</td><td>Offset from where the lock has to be continued. </td></tr>
     <tr><td class="paramname">Length</td><td>Data length to lock. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
@@ -545,7 +545,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mounted Dokan API callback. </p>
-<p>Is called when Dokan succeed to mount the volume.</p>
+<p>Called when Dokan successfully mounts the volume.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
@@ -568,12 +568,12 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>MoveFile Dokan API callback. </p>
-<p>Move a file or directory to his new destination</p>
+<p>Move a file or directory to a new destination</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">FileName</td><td>Path to the file to move. </td></tr>
-    <tr><td class="paramname">NewFileName</td><td>Path for the new location of the file </td></tr>
-    <tr><td class="paramname">ReplaceIfExisting</td><td>Can replace or not if destination already exist. </td></tr>
+    <tr><td class="paramname">FileName</td><td>Path for the file to be moved. </td></tr>
+    <tr><td class="paramname">NewFileName</td><td>Path for the new location of the file. </td></tr>
+    <tr><td class="paramname">ReplaceIfExisting</td><td>If destination already exists, can it be replaced? </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
   </dd>
@@ -593,14 +593,14 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ReadFile Dokan API callback. </p>
-<p>ReadFile callback on the file previously opened in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a>. It can be called by different thread at the same time. Therefor the read/context has to be thread safe.</p>
+<p>ReadFile callback on the file previously opened in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a>. It can be called by different threads at the same time, so the read/context has to be thread safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
-    <tr><td class="paramname">Buffer</td><td>Read buffer that has to be fill with the read result. </td></tr>
-    <tr><td class="paramname">BufferLength</td><td>Buffer length and also the read size to proceed. </td></tr>
+    <tr><td class="paramname">Buffer</td><td>Read buffer that has to be filled with the read result. </td></tr>
+    <tr><td class="paramname">BufferLength</td><td>Buffer length and read size to continue with. </td></tr>
     <tr><td class="paramname">ReadLength</td><td>Total data size that has been read. </td></tr>
-    <tr><td class="paramname">Offset</td><td>Offset from where the read has to be proceed. </td></tr>
+    <tr><td class="paramname">Offset</td><td>Offset from where the read has to be continued. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
   </dd>
@@ -694,7 +694,7 @@ Data Fields</h2></td></tr>
 
 <p>SetFileSecurity Dokan API callback. </p>
 <p>Sets the security of a file or directory object.</p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. The version must be specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -753,7 +753,7 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
-    <tr><td class="paramname">ByteOffset</td><td>Offset from where the lock has to be proceed. </td></tr>
+    <tr><td class="paramname">ByteOffset</td><td>Offset from where the lock has to be continued. </td></tr>
     <tr><td class="paramname">Length</td><td>Data length to lock. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
@@ -775,7 +775,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unmounted Dokan API callback. </p>
-<p>Is called when Dokan is unmounting the volume.</p>
+<p>Called when Dokan is unmounting the volume.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
@@ -798,14 +798,14 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>WriteFile Dokan API callback. </p>
-<p>WriteFile callback on the file previously opened in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a> It can be called by different thread at the same time. Therefor the write/context has to be thread safe.</p>
+<p>WriteFile callback on the file previously opened in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a> It can be called by different threads at the same time, sp the write/context has to be thread safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
     <tr><td class="paramname">Buffer</td><td>Data that has to be written. </td></tr>
-    <tr><td class="paramname">NumberOfBytesToWrite</td><td>Buffer length and also the write size to proceed. </td></tr>
-    <tr><td class="paramname">NumberOfBytesWritten</td><td>Total byte that has been write. </td></tr>
-    <tr><td class="paramname">Offset</td><td>Offset from where the write has to be proceed. </td></tr>
+    <tr><td class="paramname">NumberOfBytesToWrite</td><td>Buffer length and write size to continue with. </td></tr>
+    <tr><td class="paramname">NumberOfBytesWritten</td><td>Total number of bytes that have been written. </td></tr>
+    <tr><td class="paramname">Offset</td><td>Offset from where the write has to be continued. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
   </dd>
@@ -827,15 +827,15 @@ Data Fields</h2></td></tr>
 
 <p>CreateFile Dokan API callback. </p>
 <p>CreateFile is called each time a request is made on a file system object.</p>
-<p>In case <code>OPEN_ALWAYS</code> &amp; <code>CREATE_ALWAYS</code> are opening successfully a already existing file, you have to return <code>STATUS_OBJECT_NAME_COLLISION</code> instead of <code>STATUS_SUCCESS</code> . This will inform Dokan that the file has been opened and not created during the request.</p>
-<p>If the file is a directory, CreateFile is also called. In this case, CreateFile should return <code>STATUS_SUCCESS</code> when that directory can be opened and <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a59e9f25b2df70b7b94c2e1ffcd3df840">DOKAN_FILE_INFO.IsDirectory</a> has to be set to <code>TRUE</code>. On the other hand, if <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a59e9f25b2df70b7b94c2e1ffcd3df840">DOKAN_FILE_INFO.IsDirectory</a> is set to <code>TRUE</code> but the path target a file, you need to return <code>STATUS_NOT_A_DIRECTORY</code>.</p>
-<p><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO.Context</a> can be use to store Data (like <code>HANDLE</code>) that can be retrieved in all other request related to the Context. To avoid memory leak, Context need to be released in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643" title="Cleanup Dokan API callback. ">DOKAN_OPERATIONS.Cleanup</a>.</p>
+<p>In case <code>OPEN_ALWAYS</code> &amp; <code>CREATE_ALWAYS</code> are successfully opening an existing file, <code>STATUS_OBJECT_NAME_COLLISION</code> should be returned instead of <code>STATUS_SUCCESS</code> . This will inform Dokan that the file has been opened and not created during the request.</p>
+<p>If the file is a directory, CreateFile is also called. In this case, CreateFile should return <code>STATUS_SUCCESS</code> when that directory can be opened and <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a59e9f25b2df70b7b94c2e1ffcd3df840">DOKAN_FILE_INFO.IsDirectory</a> has to be set to <code>TRUE</code>. On the other hand, if <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a59e9f25b2df70b7b94c2e1ffcd3df840">DOKAN_FILE_INFO.IsDirectory</a> is set to <code>TRUE</code> but the path targets a file, <code>STATUS_NOT_A_DIRECTORY</code> must be returned.</p>
+<p><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO.Context</a> can be used to store Data (like <code>HANDLE</code>) that can be retrieved in all other requests related to the Context. To avoid memory leak, Context needs to be released in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643" title="Cleanup Dokan API callback. ">DOKAN_OPERATIONS.Cleanup</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
     <tr><td class="paramname">SecurityContext</td><td>SecurityContext, see <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff550613(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/windows/hardware/ff550613(v=vs.85).aspx</a> </td></tr>
     <tr><td class="paramname">DesiredAccess</td><td>Specifies an <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff540466(v=vs.85).aspx">ACCESS_MASK</a> value that determines the requested access to the object. </td></tr>
-    <tr><td class="paramname">FileAttributes</td><td>Specifies one or more FILE_ATTRIBUTE_XXX flags, which represent the file attributes to set if you create or overwrite a file. </td></tr>
+    <tr><td class="paramname">FileAttributes</td><td>Specifies one or more FILE_ATTRIBUTE_XXX flags, which represent the file attributes to set if a file is created or overwritten. </td></tr>
     <tr><td class="paramname">ShareAccess</td><td>Type of share access, which is specified as zero or any combination of FILE_SHARE_* flags. </td></tr>
     <tr><td class="paramname">CreateDisposition</td><td>Specifies the action to perform if the file does or does not exist. </td></tr>
     <tr><td class="paramname">CreateOptions</td><td>Specifies the options to apply when the driver creates or opens the file. </td></tr>
