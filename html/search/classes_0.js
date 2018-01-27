@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['dokan_5fcontrol',['DOKAN_CONTROL',['../struct_d_o_k_a_n___c_o_n_t_r_o_l.html',1,'']]],
   ['dokan_5ffile_5finfo',['DOKAN_FILE_INFO',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html',1,'']]],
   ['dokan_5ffind_5fdata',['DOKAN_FIND_DATA',['../struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html',1,'']]],
   ['dokan_5ffind_5fstream_5fdata',['DOKAN_FIND_STREAM_DATA',['../struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a.html',1,'']]],
