@@ -487,6 +487,7 @@ Data Fields</h2></td></tr>
 <p>GetVolumeInformation Dokan API callback. </p>
 <p>Retrieves information about the file system and volume associated with the specified root directory.</p>
 <p>Neither GetVolumeInformation nor GetDiskFreeSpace save the <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a318f415c3fe401e3949fa31ff1d4cecd">DOKAN_FILE_INFO::Context</a>. Before these methods are called, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">ZwCreateFile</a> may not be called. (ditto <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a8cec45a9afcc0fc737fb765eb97c639d">CloseFile</a> and <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643">Cleanup</a>)</p>
+<p>FileSystemName could be anything up to 10 characters. But Windows check few feature availability based on file system name. For this, it is recommended to set NTFS or FAT here.</p>
 <p><code>FILE_READ_ONLY_VOLUME</code> is automatically added to the FileSystemFlags if <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gaec347fdb574bc347ace4de85ea513978">DOKAN_OPTION_WRITE_PROTECT</a> was specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html" title="Dokan mount options used to describe Dokan device behavior. ">DOKAN_OPTIONS</a> when the volume was mounted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
