@@ -454,7 +454,7 @@ Data Fields</h2></td></tr>
 
 <p>GetFileSecurity Dokan API callback. </p>
 <p>Get specified information about the security of a file or directory.</p>
-<p>Return <code>STATUS_BUFFER_OVERFLOW</code> if buffer size is too small.</p>
+<p>Return <code>STATUS_NOT_IMPLEMENTED</code> to let dokan library build a sddl of the current process user with authenticate user rights for context menu. Return <code>STATUS_BUFFER_OVERFLOW</code> if buffer size is too small.</p>
 <dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. The version must be specified in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
