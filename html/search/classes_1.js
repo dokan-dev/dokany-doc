@@ -9,6 +9,7 @@ var searchData=
   ['file_5fboth_5fdir_5finformation',['FILE_BOTH_DIR_INFORMATION',['../struct_f_i_l_e___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5fdirectory_5finformation',['FILE_DIRECTORY_INFORMATION',['../struct_f_i_l_e___d_i_r_e_c_t_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5fdisposition_5finformation',['FILE_DISPOSITION_INFORMATION',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
+  ['file_5fdisposition_5finformation_5fex',['FILE_DISPOSITION_INFORMATION_EX',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html',1,'']]],
   ['file_5fea_5finformation',['FILE_EA_INFORMATION',['../struct_f_i_l_e___e_a___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5fend_5fof_5ffile_5finformation',['FILE_END_OF_FILE_INFORMATION',['../struct_f_i_l_e___e_n_d___o_f___f_i_l_e___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5ffs_5fattribute_5finformation',['FILE_FS_ATTRIBUTE_INFORMATION',['../struct_f_i_l_e___f_s___a_t_t_r_i_b_u_t_e___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],

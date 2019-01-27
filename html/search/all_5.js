@@ -9,6 +9,7 @@ var searchData=
   ['file_5fboth_5fdir_5finformation',['FILE_BOTH_DIR_INFORMATION',['../struct_f_i_l_e___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5fdirectory_5finformation',['FILE_DIRECTORY_INFORMATION',['../struct_f_i_l_e___d_i_r_e_c_t_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5fdisposition_5finformation',['FILE_DISPOSITION_INFORMATION',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
+  ['file_5fdisposition_5finformation_5fex',['FILE_DISPOSITION_INFORMATION_EX',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html',1,'']]],
   ['file_5fea_5finformation',['FILE_EA_INFORMATION',['../struct_f_i_l_e___e_a___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5fend_5fof_5ffile_5finformation',['FILE_END_OF_FILE_INFORMATION',['../struct_f_i_l_e___e_n_d___o_f___f_i_l_e___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
   ['file_5ffs_5fattribute_5finformation',['FILE_FS_ATTRIBUTE_INFORMATION',['../struct_f_i_l_e___f_s___a_t_t_r_i_b_u_t_e___i_n_f_o_r_m_a_t_i_o_n.html',1,'']]],
@@ -45,6 +46,6 @@ var searchData=
   ['findfileswithpattern',['FindFilesWithPattern',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0f280feb3cbff134e997bec6d6db5171',1,'DOKAN_OPERATIONS']]],
   ['findstreamdata',['FindStreamData',['../struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a.html#afb4e71813b706c10eca2ae7633298018',1,'DOKAN_FIND_STREAM_DATA']]],
   ['findstreams',['FindStreams',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa9d39dd80b71f6ae18e791969bb4c2a2',1,'DOKAN_OPERATIONS']]],
-  ['flags',['Flags',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#afd1ee3c01fa573dbfc0563ab150e74fc',1,'REPARSE_DATA_BUFFER']]],
+  ['flags',['Flags',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html#a67973c9df752927108577dfb6096a89c',1,'FILE_DISPOSITION_INFORMATION_EX::Flags()'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#afd1ee3c01fa573dbfc0563ab150e74fc',1,'REPARSE_DATA_BUFFER::Flags()']]],
   ['flushfilebuffers',['FlushFileBuffers',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a3c8b596797ea6821b7ec26489d4f14ea',1,'DOKAN_OPERATIONS']]]
 ];
