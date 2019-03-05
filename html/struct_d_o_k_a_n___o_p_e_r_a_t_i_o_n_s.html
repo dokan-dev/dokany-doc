@@ -326,7 +326,8 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>FindFilesWithPattern Dokan API callback. </p>
-<p>Same as <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e">DOKAN_OPERATIONS::FindFiles</a> but with a search pattern.</p>
+<p>Same as <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e">DOKAN_OPERATIONS::FindFiles</a> but with a search pattern.<br />
+The search pattern is a Windows MS-DOS-style expression. See <a class="el" href="group___dokan.html#ga2e8585b8730ee74c0cd0cadf3e8cb01a">DokanIsNameInExpression</a> .</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PathName</td><td>Path requested by the Kernel on the FileSystem. </td></tr>
@@ -337,7 +338,9 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>STATUS_SUCCESS</code> on success or NTSTATUS appropriate to the request result. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e" title="FindFiles Dokan API callback. ">FindFiles</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e" title="FindFiles Dokan API callback. ">FindFiles</a> </dd>
+<dd>
+<a class="el" href="group___dokan.html#ga2e8585b8730ee74c0cd0cadf3e8cb01a" title="Checks whether Name matches Expression. ">DokanIsNameInExpression</a> </dd></dl>
 
 </div>
 </div>
