@@ -314,15 +314,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks whether Name matches Expression. </p>
-<p>Behave like <code>FsRtlIsNameInExpression</code> routine from Microsoft<br />
+<p>Behave like <code>FsRtlIsNameInExpression</code> routine from <a href="https://msdn.microsoft.com/en-us/library/ff546850(v=VS.85).aspx">Microsoft</a><br />
 <code>*</code> (asterisk) Matches zero or more characters.<br />
 <code>?</code> (question mark) Matches a single character.<br />
-<code>DOS_DOT</code> Matches either a period or zero characters beyond the name string.<br />
-<code>DOS_QM</code> Matches any single character or, upon encountering a period or end of name string, advances the expression to the end of the set of contiguous DOS_QMs.<br />
-<code>DOS_STAR</code> Matches zero or more characters until encountering and matching the final <code></code>. in the name.</p>
+<code>DOS_DOT</code> (<code>"</code> quotation mark) Matches either a period or zero characters beyond the name string.<br />
+<code>DOS_QM</code> (<code>&gt;</code> greater than) Matches any single character or, upon encountering a period or end of name string, advances the expression to the end of the set of contiguous DOS_QMs.<br />
+<code>DOS_STAR</code> (<code>&lt;</code> less than) Matches zero or more characters until encountering and matching the final <code></code>. in the name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Expression</td><td>Expression can contain <code>?</code> (any one character) and <code>*</code> (any string) </td></tr>
+    <tr><td class="paramname">Expression</td><td>Expression can contain any of the above characters. </td></tr>
     <tr><td class="paramname">Name</td><td>Name to check </td></tr>
     <tr><td class="paramname">IgnoreCase</td><td>Case sensitive or not </td></tr>
   </table>
