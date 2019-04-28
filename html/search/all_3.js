@@ -20,7 +20,6 @@ var searchData=
   ['dokan_5ffind_5fdata',['DOKAN_FIND_DATA',['../struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html',1,'']]],
   ['dokan_5ffind_5fstream_5fdata',['DOKAN_FIND_STREAM_DATA',['../struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a.html',1,'']]],
   ['dokan_5finstance',['DOKAN_INSTANCE',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html',1,'']]],
-  ['dokan_5fmax_5finstances',['DOKAN_MAX_INSTANCES',['../group___dokan.html#ga69ecff3070f27b228f78641f820bfa24',1,'dokan.h']]],
   ['dokan_5fminimum_5fcompatible_5fversion',['DOKAN_MINIMUM_COMPATIBLE_VERSION',['../group___dokan.html#gaab6d243f4854d0162867d2b6940e004b',1,'dokan.h']]],
   ['dokan_5fmount_5ferror',['DOKAN_MOUNT_ERROR',['../group___dokan_main_result.html#gadad4e4bf7120e2832a609aa0a49d530a',1,'dokan.h']]],
   ['dokan_5fmount_5fpoint_5ferror',['DOKAN_MOUNT_POINT_ERROR',['../group___dokan_main_result.html#gaa4e3c675c622d5f861eb705293aad5a5',1,'dokan.h']]],
