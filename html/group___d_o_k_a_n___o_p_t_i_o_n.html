@@ -113,6 +113,12 @@ Macros</h2></td></tr>
 <tr class="separator:gafeb9b73b1fe996d45290c3fc4d80562c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60a028554f3d30088c13204a70f700aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga60a028554f3d30088c13204a70f700aa">DOKAN_OPTION_FILELOCK_USER_MODE</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:ga60a028554f3d30088c13204a70f700aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac544bbd0b70b9b8f2b804eebc2550cb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gac544bbd0b70b9b8f2b804eebc2550cb2">DOKAN_OPTION_LOCK_DEBUG_ENABLED</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:gac544bbd0b70b9b8f2b804eebc2550cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1dff954b1fc1ca63f0d38130fc63cde7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga1dff954b1fc1ca63f0d38130fc63cde7">DOKAN_OPTION_DISABLE_OPLOCKS</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:ga1dff954b1fc1ca63f0d38130fc63cde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f53b3cd9b539aa4dbb0b20e538e517f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga3f53b3cd9b539aa4dbb0b20e538e517f">DOKAN_OPTION_LOG_OPLOCKS</a>&#160;&#160;&#160;16384</td></tr>
+<tr class="separator:ga3f53b3cd9b539aa4dbb0b20e538e517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>All DOKAN_OPTION flags used in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a2ed6d3cbd74669deedd1fdd698e81585">DOKAN_OPTIONS.Options</a>. </p>
@@ -127,7 +133,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use alternate stream </p>
+<p>Enable the use of alternate stream paths in the form &lt;file-name&gt;:&lt;stream-name&gt;. If this is not specified then the driver will fail any attempt to access a path with a colon. </p>
 
 </div>
 </div>
@@ -157,6 +163,19 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga1dff954b1fc1ca63f0d38130fc63cde7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOKAN_OPTION_DISABLE_OPLOCKS&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether to disable any oplock support on the volume. Regular range locks are enabled regardless. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga60a028554f3d30088c13204a70f700aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,6 +186,32 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Enable Lockfile/Unlockfile operations. Otherwise Dokan will take care of it </p>
+
+</div>
+</div>
+<a class="anchor" id="gac544bbd0b70b9b8f2b804eebc2550cb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOKAN_OPTION_LOCK_DEBUG_ENABLED&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable logging of abnormally long kernel lock acquisition waits. This is detrimental to performance and should not be enabled in normal use. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga3f53b3cd9b539aa4dbb0b20e538e517f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOKAN_OPTION_LOG_OPLOCKS&#160;&#160;&#160;16384</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the driver should log oplock requests. This may be detrimental to preformance and should not be enabled in normal use. </p>
 
 </div>
 </div>
@@ -205,7 +250,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use removable drive </p>
+<p>Enable the invocation of user-mode file locking callbacks. If this is not specified, then the driver uses FsRtlCheckOplock and related functions to implement locking. </p>
 
 </div>
 </div>
