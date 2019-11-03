@@ -490,12 +490,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Release Mount point list resources from <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a>. </p>
+<p>After <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a> call you will receive a dynamically allocated array of DOKAN_CONTROL. This array needs to be released when no longer needed by calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Allocate</td><td>array of DOKAN_CONTROL from <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a>. </td></tr>
+    <tr><td class="paramname">list</td><td>Allocated array of DOKAN_CONTROL from <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a>. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Nothing. </dd></dl>
 
 </div>
 </div>
