@@ -123,9 +123,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5b47eeb4d113e9981b11e4c22890027f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga5b47eeb4d113e9981b11e4c22890027f">DokanRemoveMountPoint</a> (LPCWSTR MountPoint)</td></tr>
 <tr class="memdesc:ga5b47eeb4d113e9981b11e4c22890027f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a Dokan device from a mount point.  <a href="#ga5b47eeb4d113e9981b11e4c22890027f">More...</a><br /></td></tr>
 <tr class="separator:ga5b47eeb4d113e9981b11e4c22890027f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53831fe835a36a210b380289f592d51c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga53831fe835a36a210b380289f592d51c">DokanRemoveMountPointEx</a> (LPCWSTR MountPoint, BOOL Safe)</td></tr>
-<tr class="memdesc:ga53831fe835a36a210b380289f592d51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a Dokan device from a mount point.  <a href="#ga53831fe835a36a210b380289f592d51c">More...</a><br /></td></tr>
-<tr class="separator:ga53831fe835a36a210b380289f592d51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e8585b8730ee74c0cd0cadf3e8cb01a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga2e8585b8730ee74c0cd0cadf3e8cb01a">DokanIsNameInExpression</a> (LPCWSTR Expression, LPCWSTR Name, BOOL IgnoreCase)</td></tr>
 <tr class="memdesc:ga2e8585b8730ee74c0cd0cadf3e8cb01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether Name matches Expression.  <a href="#ga2e8585b8730ee74c0cd0cadf3e8cb01a">More...</a><br /></td></tr>
 <tr class="separator:ga2e8585b8730ee74c0cd0cadf3e8cb01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -519,44 +516,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">MountPoint</td><td>Mount point to unmount ("Z", "Z:", "Z:\", "Z:\MyMountPoint"). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>TRUE</code> if device was unmounted or <code>FALSE</code> in case of failure or device not found. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga53831fe835a36a210b380289f592d51c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOL DokanRemoveMountPointEx </td>
-          <td>(</td>
-          <td class="paramtype">LPCWSTR&#160;</td>
-          <td class="paramname"><em>MountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BOOL&#160;</td>
-          <td class="paramname"><em>Safe</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unmount a Dokan device from a mount point. </p>
-<p>Same as <a class="el" href="group___dokan.html#ga5b47eeb4d113e9981b11e4c22890027f">DokanRemoveMountPoint</a> If Safe is <code>TRUE</code>, it will broadcast to all desktops and Shells Safe should not be used during DLL_PROCESS_DETACH</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___dokan.html#ga5b47eeb4d113e9981b11e4c22890027f" title="Unmount a Dokan device from a mount point. ">DokanRemoveMountPoint</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">MountPoint</td><td>Mount point to unmount ("Z", "Z:", "Z:\", "Z:\MyMountPoint"). </td></tr>
-    <tr><td class="paramname">Safe</td><td>Process is not in DLL_PROCESS_DETACH state. </td></tr>
   </table>
   </dd>
 </dl>
