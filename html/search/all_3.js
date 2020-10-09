@@ -33,6 +33,7 @@ var searchData=
   ['dokan_5foption_5fdisable_5foplocks',['DOKAN_OPTION_DISABLE_OPLOCKS',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga1dff954b1fc1ca63f0d38130fc63cde7',1,'dokan.h']]],
   ['dokan_5foption_5fenable_5ffcb_5fgarbage_5fcollection',['DOKAN_OPTION_ENABLE_FCB_GARBAGE_COLLECTION',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga6b561dda3ba66021e2a5d60fa3d3e25d',1,'dokan.h']]],
   ['dokan_5foption_5fenable_5fnotification_5fapi',['DOKAN_OPTION_ENABLE_NOTIFICATION_API',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga79f71aa03b0c837713f6eadb76aba041',1,'dokan.h']]],
+  ['dokan_5foption_5fenable_5funmount_5fnetwork_5fdrive',['DOKAN_OPTION_ENABLE_UNMOUNT_NETWORK_DRIVE',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga8fcbd3424c84f476bd8444ae8c4c8b46',1,'dokan.h']]],
   ['dokan_5foption_5ffilelock_5fuser_5fmode',['DOKAN_OPTION_FILELOCK_USER_MODE',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga60a028554f3d30088c13204a70f700aa',1,'dokan.h']]],
   ['dokan_5foption_5fmount_5fmanager',['DOKAN_OPTION_MOUNT_MANAGER',['../group___d_o_k_a_n___o_p_t_i_o_n.html#gaf32d886fd9e36727667e27a1ca4c3285',1,'dokan.h']]],
   ['dokan_5foption_5fnetwork',['DOKAN_OPTION_NETWORK',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga6db515a2ec6fd8e19ac98be3aab75a31',1,'dokan.h']]],
