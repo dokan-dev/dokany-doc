@@ -198,7 +198,7 @@ Data Fields</h2></td></tr>
 
 <p>Cleanup Dokan API callback. </p>
 <p>Cleanup request before <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a8cec45a9afcc0fc737fb765eb97c639d">CloseFile</a> is called.</p>
-<p>When <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> is <code>TRUE</code>, the file in Cleanup must be deleted. See DeleteFile documentation for explanation.</p>
+<p>When <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> is <code>TRUE</code>, the file in Cleanup must be deleted. The function cannot fail therefore the filesystem need to ensure ahead that a the delete can safely happen during Cleanup. See DeleteFile documentation for explanation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
