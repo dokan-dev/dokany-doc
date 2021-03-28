@@ -122,6 +122,8 @@ Macros</h2></td></tr>
 <tr class="separator:gacf3dcc07c7a4ca2d7aa3e32ef5ae87dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8fcbd3424c84f476bd8444ae8c4c8b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga8fcbd3424c84f476bd8444ae8c4c8b46">DOKAN_OPTION_ENABLE_UNMOUNT_NETWORK_DRIVE</a>&#160;&#160;&#160;8192</td></tr>
 <tr class="separator:ga8fcbd3424c84f476bd8444ae8c4c8b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4d7082d382e5befb22856c0eef38307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gaf4d7082d382e5befb22856c0eef38307">DOKAN_OPTION_DISPATCH_DRIVER_LOGS</a>&#160;&#160;&#160;16384</td></tr>
+<tr class="separator:gaf4d7082d382e5befb22856c0eef38307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>All DOKAN_OPTION flags used in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a2ed6d3cbd74669deedd1fdd698e81585">DOKAN_OPTIONS.Options</a>. </p>
@@ -163,6 +165,20 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Enable ouput debug message </p>
+
+</div>
+</div>
+<a class="anchor" id="gaf4d7082d382e5befb22856c0eef38307"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOKAN_OPTION_DISPATCH_DRIVER_LOGS&#160;&#160;&#160;16384</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forward the kernel driver global and volume logs to the userland.</p>
+<p>This option is expected to be slow until IpcBatching is available on v2.x.x </p>
 
 </div>
 </div>

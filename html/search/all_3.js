@@ -30,6 +30,7 @@ var searchData=
   ['dokan_5foption_5falt_5fstream',['DOKAN_OPTION_ALT_STREAM',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga2b4ad209c39c04c593ded24fb36cb631',1,'dokan.h']]],
   ['dokan_5foption_5fcurrent_5fsession',['DOKAN_OPTION_CURRENT_SESSION',['../group___d_o_k_a_n___o_p_t_i_o_n.html#gafeb9b73b1fe996d45290c3fc4d80562c',1,'dokan.h']]],
   ['dokan_5foption_5fdebug',['DOKAN_OPTION_DEBUG',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga9892226236c01bb264d701023cfc539b',1,'dokan.h']]],
+  ['dokan_5foption_5fdispatch_5fdriver_5flogs',['DOKAN_OPTION_DISPATCH_DRIVER_LOGS',['../group___d_o_k_a_n___o_p_t_i_o_n.html#gaf4d7082d382e5befb22856c0eef38307',1,'dokan.h']]],
   ['dokan_5foption_5fenable_5ffcb_5fgarbage_5fcollection',['DOKAN_OPTION_ENABLE_FCB_GARBAGE_COLLECTION',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga6b561dda3ba66021e2a5d60fa3d3e25d',1,'dokan.h']]],
   ['dokan_5foption_5fenable_5fnotification_5fapi',['DOKAN_OPTION_ENABLE_NOTIFICATION_API',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga79f71aa03b0c837713f6eadb76aba041',1,'dokan.h']]],
   ['dokan_5foption_5fenable_5funmount_5fnetwork_5fdrive',['DOKAN_OPTION_ENABLE_UNMOUNT_NETWORK_DRIVE',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga8fcbd3424c84f476bd8444ae8c4c8b46',1,'dokan.h']]],
