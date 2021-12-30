@@ -5,5 +5,7 @@ var searchData=
   ['volumecreationtime',['VolumeCreationTime',['../struct_f_i_l_e___f_s___v_o_l_u_m_e___i_n_f_o_r_m_a_t_i_o_n.html#a95ecf2de0edb68bb7d24a65e8ea5f3e4',1,'FILE_FS_VOLUME_INFORMATION']]],
   ['volumelabel',['VolumeLabel',['../struct_f_i_l_e___f_s___l_a_b_e_l___i_n_f_o_r_m_a_t_i_o_n.html#a8dda30e9f1ce44f3a5278d57e10d3c36',1,'FILE_FS_LABEL_INFORMATION::VolumeLabel()'],['../struct_f_i_l_e___f_s___v_o_l_u_m_e___i_n_f_o_r_m_a_t_i_o_n.html#a6e89017b80bffbe475571ef4d68fb26b',1,'FILE_FS_VOLUME_INFORMATION::VolumeLabel()']]],
   ['volumelabellength',['VolumeLabelLength',['../struct_f_i_l_e___f_s___l_a_b_e_l___i_n_f_o_r_m_a_t_i_o_n.html#a7f1474355d0b310a6f6a56b956446fd3',1,'FILE_FS_LABEL_INFORMATION::VolumeLabelLength()'],['../struct_f_i_l_e___f_s___v_o_l_u_m_e___i_n_f_o_r_m_a_t_i_o_n.html#a43d189d60f57913f8a9107a4b5d9579f',1,'FILE_FS_VOLUME_INFORMATION::VolumeLabelLength()']]],
+  ['volumesecuritydescriptor',['VolumeSecurityDescriptor',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#afb775f1b1063969bed1420353a5092d5',1,'DOKAN_OPTIONS']]],
+  ['volumesecuritydescriptorlength',['VolumeSecurityDescriptorLength',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a18dc71b53604ad9b71e1fa690707455d',1,'DOKAN_OPTIONS']]],
   ['volumeserialnumber',['VolumeSerialNumber',['../struct_f_i_l_e___i_d___i_n_f_o_r_m_a_t_i_o_n.html#a2ae292e00c8ab350e3c46a560cc48d3c',1,'FILE_ID_INFORMATION::VolumeSerialNumber()'],['../struct_f_i_l_e___f_s___v_o_l_u_m_e___i_n_f_o_r_m_a_t_i_o_n.html#ae66ae5df5f5b9fefd07f624f33d477c1',1,'FILE_FS_VOLUME_INFORMATION::VolumeSerialNumber()']]]
 ];

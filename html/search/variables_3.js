@@ -8,7 +8,6 @@ var searchData=
   ['devicename',['DeviceName',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ad599f789ab36751c82f0faffe36494f0',1,'DOKAN_INSTANCE']]],
   ['devicenumber',['DeviceNumber',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a9319b1b870915ff90a84b11f5538c145',1,'DOKAN_INSTANCE']]],
   ['directory',['Directory',['../struct_f_i_l_e___s_t_a_n_d_a_r_d___i_n_f_o_r_m_a_t_i_o_n.html#aa5a99d2c4c8a1267a2372e46a0579d36',1,'FILE_STANDARD_INFORMATION']]],
-  ['dirlisthead',['DirListHead',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#a3fc9489227349532dd4c6d9a7477638e',1,'DOKAN_OPEN_INFO']]],
   ['dokancontext',['DokanContext',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a208f636fe8d4ddd3340e51985a08d564',1,'DOKAN_FILE_INFO']]],
   ['dokaninstance',['DokanInstance',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#ad9ce9aaecf3d57e6a86a787553c6363a',1,'DOKAN_OPEN_INFO']]],
   ['dokanoperations',['DokanOperations',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ae42810a4e5c514903e52be9afdb78473',1,'DOKAN_INSTANCE']]],

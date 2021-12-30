@@ -103,9 +103,9 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga62a8c5e57382c969e686a040e7cd4bf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga62a8c5e57382c969e686a040e7cd4bf2">DOKAN_VERSION</a>&#160;&#160;&#160;151</td></tr>
+<tr class="memitem:ga62a8c5e57382c969e686a040e7cd4bf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga62a8c5e57382c969e686a040e7cd4bf2">DOKAN_VERSION</a>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:ga62a8c5e57382c969e686a040e7cd4bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab6d243f4854d0162867d2b6940e004b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gaab6d243f4854d0162867d2b6940e004b">DOKAN_MINIMUM_COMPATIBLE_VERSION</a>&#160;&#160;&#160;110</td></tr>
+<tr class="memitem:gaab6d243f4854d0162867d2b6940e004b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gaab6d243f4854d0162867d2b6940e004b">DOKAN_MINIMUM_COMPATIBLE_VERSION</a>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:gaab6d243f4854d0162867d2b6940e004b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e02f6c84b22b39d0458be91ca128e5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga3e02f6c84b22b39d0458be91ca128e5b">DOKAN_DRIVER_NAME</a>&#160;&#160;&#160;L&quot;dokan&quot; DOKAN_MAJOR_API_VERSION L&quot;.sys&quot;</td></tr>
 <tr class="separator:ga3e02f6c84b22b39d0458be91ca128e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,9 +114,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga601e46032af44a7053a0ed1cd7a8f910"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a> ()</td></tr>
+<tr class="memdesc:ga601e46032af44a7053a0ed1cd7a8f910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all required Dokan internal resources.  <a href="#ga601e46032af44a7053a0ed1cd7a8f910">More...</a><br /></td></tr>
+<tr class="separator:ga601e46032af44a7053a0ed1cd7a8f910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03eb16c0f047a74c180217284436d4a3"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga03eb16c0f047a74c180217284436d4a3">DokanShutdown</a> ()</td></tr>
+<tr class="memdesc:ga03eb16c0f047a74c180217284436d4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all allocated resources by <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a>.  <a href="#ga03eb16c0f047a74c180217284436d4a3">More...</a><br /></td></tr>
+<tr class="separator:ga03eb16c0f047a74c180217284436d4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga099fb73df80893f9da337a2dd7a6634e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga099fb73df80893f9da337a2dd7a6634e">DokanMain</a> (PDOKAN_OPTIONS DokanOptions, PDOKAN_OPERATIONS DokanOperations)</td></tr>
 <tr class="memdesc:ga099fb73df80893f9da337a2dd7a6634e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume.  <a href="#ga099fb73df80893f9da337a2dd7a6634e">More...</a><br /></td></tr>
 <tr class="separator:ga099fb73df80893f9da337a2dd7a6634e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4f6361fa86397a54471eb9b5d4259c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> (_In_ PDOKAN_OPTIONS DokanOptions, _In_ PDOKAN_OPERATIONS DokanOperations, _Out_ DOKAN_HANDLE *DokanInstance)</td></tr>
+<tr class="memdesc:gaf4f6361fa86397a54471eb9b5d4259c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume.  <a href="#gaf4f6361fa86397a54471eb9b5d4259c3">More...</a><br /></td></tr>
+<tr class="separator:gaf4f6361fa86397a54471eb9b5d4259c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4de34ef862dd5e58017f93f971e4a45a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga4de34ef862dd5e58017f93f971e4a45a">DokanIsFileSystemRunning</a> (_In_ DOKAN_HANDLE DokanInstance)</td></tr>
+<tr class="memdesc:ga4de34ef862dd5e58017f93f971e4a45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the FileSystem is still running or not.  <a href="#ga4de34ef862dd5e58017f93f971e4a45a">More...</a><br /></td></tr>
+<tr class="separator:ga4de34ef862dd5e58017f93f971e4a45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08219725d8c34a26ef88c337fdb18188"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga08219725d8c34a26ef88c337fdb18188">DokanWaitForFileSystemClosed</a> (_In_ DOKAN_HANDLE DokanInstance, _In_ DWORD dwMilliseconds)</td></tr>
+<tr class="memdesc:ga08219725d8c34a26ef88c337fdb18188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the FileSystem is unmount.  <a href="#ga08219725d8c34a26ef88c337fdb18188">More...</a><br /></td></tr>
+<tr class="separator:ga08219725d8c34a26ef88c337fdb18188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f238772042c20ff5ebf6eb3391d555d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga0f238772042c20ff5ebf6eb3391d555d">DokanCloseHandle</a> (_In_ DOKAN_HANDLE DokanInstance)</td></tr>
+<tr class="memdesc:ga0f238772042c20ff5ebf6eb3391d555d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount the Dokan instance.  <a href="#ga0f238772042c20ff5ebf6eb3391d555d">More...</a><br /></td></tr>
+<tr class="separator:ga0f238772042c20ff5ebf6eb3391d555d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9ed3293f6830c8ace6419082434128a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gae9ed3293f6830c8ace6419082434128a">DokanUnmount</a> (WCHAR DriveLetter)</td></tr>
 <tr class="memdesc:gae9ed3293f6830c8ace6419082434128a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a Dokan device from a driver letter.  <a href="#gae9ed3293f6830c8ace6419082434128a">More...</a><br /></td></tr>
 <tr class="separator:gae9ed3293f6830c8ace6419082434128a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,15 +156,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga09859474c6ffee4fdc318e47e30c1a03"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga09859474c6ffee4fdc318e47e30c1a03">DokanOpenRequestorToken</a> (PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
 <tr class="memdesc:ga09859474c6ffee4fdc318e47e30c1a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handle to Access Token.  <a href="#ga09859474c6ffee4fdc318e47e30c1a03">More...</a><br /></td></tr>
 <tr class="separator:ga09859474c6ffee4fdc318e47e30c1a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7df1fb9ac0ed72c2b6186382d23a0fa2"><td class="memItemLeft" align="right" valign="top">PDOKAN_CONTROL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a> (BOOL uncOnly, PULONG nbRead)</td></tr>
-<tr class="memdesc:ga7df1fb9ac0ed72c2b6186382d23a0fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active Dokan mount points.  <a href="#ga7df1fb9ac0ed72c2b6186382d23a0fa2">More...</a><br /></td></tr>
-<tr class="separator:ga7df1fb9ac0ed72c2b6186382d23a0fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51be6eda3489e76bd0a649443b0fadc6"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga51be6eda3489e76bd0a649443b0fadc6">DokanReleaseMountPointList</a> (PDOKAN_CONTROL list)</td></tr>
-<tr class="memdesc:ga51be6eda3489e76bd0a649443b0fadc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release Mount point list resources from <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a>.  <a href="#ga51be6eda3489e76bd0a649443b0fadc6">More...</a><br /></td></tr>
-<tr class="separator:ga51be6eda3489e76bd0a649443b0fadc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58cc5a921a84f54042f2ac04b27bbc75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga58cc5a921a84f54042f2ac04b27bbc75">DokanMapKernelToUserCreateFileFlags</a> (ACCESS_MASK DesiredAccess, ULONG FileAttributes, ULONG CreateOptions, ULONG CreateDisposition, ACCESS_MASK *outDesiredAccess, DWORD *outFileAttributesAndFlags, DWORD *outCreationDisposition)</td></tr>
-<tr class="memdesc:ga58cc5a921a84f54042f2ac04b27bbc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">DOKAN_OPERATIONS::ZwCreateFile</a> parameters to <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx">CreateFile</a> parameters.  <a href="#ga58cc5a921a84f54042f2ac04b27bbc75">More...</a><br /></td></tr>
-<tr class="separator:ga58cc5a921a84f54042f2ac04b27bbc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafe0e4fde9e4a8f61c19c873ce29e2ae"><td class="memItemLeft" align="right" valign="top">PDOKAN_MOUNT_POINT_INFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gaafe0e4fde9e4a8f61c19c873ce29e2ae">DokanGetMountPointList</a> (BOOL uncOnly, PULONG nbRead)</td></tr>
+<tr class="memdesc:gaafe0e4fde9e4a8f61c19c873ce29e2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get active Dokan mount points.  <a href="#gaafe0e4fde9e4a8f61c19c873ce29e2ae">More...</a><br /></td></tr>
+<tr class="separator:gaafe0e4fde9e4a8f61c19c873ce29e2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69a6f398c65b17c0ce908aaa23dd817c"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga69a6f398c65b17c0ce908aaa23dd817c">DokanReleaseMountPointList</a> (PDOKAN_MOUNT_POINT_INFO list)</td></tr>
+<tr class="memdesc:ga69a6f398c65b17c0ce908aaa23dd817c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release Mount point list resources from <a class="el" href="group___dokan.html#gaafe0e4fde9e4a8f61c19c873ce29e2ae">DokanGetMountPointList</a>.  <a href="#ga69a6f398c65b17c0ce908aaa23dd817c">More...</a><br /></td></tr>
+<tr class="separator:ga69a6f398c65b17c0ce908aaa23dd817c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8272128a34921d9514861363f0e22c0"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gaf8272128a34921d9514861363f0e22c0">DokanMapKernelToUserCreateFileFlags</a> (ACCESS_MASK DesiredAccess, ULONG FileAttributes, ULONG CreateOptions, ULONG CreateDisposition, ACCESS_MASK *outDesiredAccess, DWORD *outFileAttributesAndFlags, DWORD *outCreationDisposition)</td></tr>
+<tr class="memdesc:gaf8272128a34921d9514861363f0e22c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">DOKAN_OPERATIONS::ZwCreateFile</a> parameters to <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx">CreateFile</a> parameters.  <a href="#gaf8272128a34921d9514861363f0e22c0">More...</a><br /></td></tr>
+<tr class="separator:gaf8272128a34921d9514861363f0e22c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1bcba8145ee5205cd41fa5eebdffaa82"><td class="memItemLeft" align="right" valign="top">NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga1bcba8145ee5205cd41fa5eebdffaa82">DokanNtStatusFromWin32</a> (DWORD Error)</td></tr>
 <tr class="memdesc:ga1bcba8145ee5205cd41fa5eebdffaa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert WIN32 error to NTSTATUS.  <a href="#ga1bcba8145ee5205cd41fa5eebdffaa82">More...</a><br /></td></tr>
 <tr class="separator:ga1bcba8145ee5205cd41fa5eebdffaa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,11 +190,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DOKAN_MINIMUM_COMPATIBLE_VERSION&#160;&#160;&#160;110</td>
+          <td class="memname">#define DOKAN_MINIMUM_COMPATIBLE_VERSION&#160;&#160;&#160;200</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Minimum Dokan version (ver 1.1.0) accepted. </p>
+<p>Minimum Dokan version (ver 2.0.0) accepted. </p>
 
 </div>
 </div>
@@ -198,15 +216,86 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DOKAN_VERSION&#160;&#160;&#160;151</td>
+          <td class="memname">#define DOKAN_VERSION&#160;&#160;&#160;200</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The current Dokan version (140 means ver 1.4.0). <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a> </p>
+<p>The current Dokan version (200 means ver 2.0.0). <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">DOKAN_OPTIONS::Version</a> </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga0f238772042c20ff5ebf6eb3391d555d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID DokanCloseHandle </td>
+          <td>(</td>
+          <td class="paramtype">_In_ DOKAN_HANDLE&#160;</td>
+          <td class="paramname"><em>DokanInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmount the Dokan instance. </p>
+<p>Unmount and wait until all resources of the <code>DokanInstance</code> are released.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DokanInstance</td><td>The dokan mount context created by <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> . </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf4f6361fa86397a54471eb9b5d4259c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DokanCreateFileSystem </td>
+          <td>(</td>
+          <td class="paramtype">_In_ PDOKAN_OPTIONS&#160;</td>
+          <td class="paramname"><em>DokanOptions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_In_ PDOKAN_OPERATIONS&#160;</td>
+          <td class="paramname"><em>DokanOperations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_Out_ DOKAN_HANDLE *&#160;</td>
+          <td class="paramname"><em>DokanInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount a new Dokan Volume. </p>
+<p>It is mandatory to have called <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a> previously to use this API.</p>
+<p>This function returns directly on device mount or on failure. See <a class="el" href="group___dokan_main_result.html">DokanMainResult</a> for possible errors.</p>
+<p><a class="el" href="group___dokan.html#ga08219725d8c34a26ef88c337fdb18188">DokanWaitForFileSystemClosed</a> can be used to wait until the device is unmount.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DokanOptions</td><td>a <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html">DOKAN_OPTIONS</a> that describe the mount. </td></tr>
+    <tr><td class="paramname">DokanOperations</td><td>Instance of <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html">DOKAN_OPERATIONS</a> that will be called for each request made by the kernel. </td></tr>
+    <tr><td class="paramname">DokanInstance</td><td>Dokan mount instance context that can be used for related instance calls like <a class="el" href="group___dokan.html#ga4de34ef862dd5e58017f93f971e4a45a">DokanIsFileSystemRunning</a> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___dokan_main_result.html">DokanMainResult</a> status. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga51cbe6e697d53ecb91be1f3780d2bcca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -225,12 +314,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga7df1fb9ac0ed72c2b6186382d23a0fa2"></a>
+<a class="anchor" id="gaafe0e4fde9e4a8f61c19c873ce29e2ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PDOKAN_CONTROL DokanGetMountPointList </td>
+          <td class="memname">PDOKAN_MOUNT_POINT_INFO DokanGetMountPointList </td>
           <td>(</td>
           <td class="paramtype">BOOL&#160;</td>
           <td class="paramname"><em>uncOnly</em>, </td>
@@ -250,7 +339,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get active Dokan mount points. </p>
-<p>Returned array need to be released by calling <a class="el" href="group___dokan.html#ga51be6eda3489e76bd0a649443b0fadc6">DokanReleaseMountPointList</a></p>
+<p>Returned array need to be released by calling <a class="el" href="group___dokan.html#ga69a6f398c65b17c0ce908aaa23dd817c">DokanReleaseMountPointList</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uncOnly</td><td>Get only instances that have UNC Name. </td></tr>
@@ -258,7 +347,50 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Allocate array of DOKAN_CONTROL. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Allocate array of DOKAN_MOUNT_POINT_INFO. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga601e46032af44a7053a0ed1cd7a8f910"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID DokanInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize all required Dokan internal resources. </p>
+<p>This needs to be called only once before trying to use <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> for the first time. Otherwise <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> will just fail. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4de34ef862dd5e58017f93f971e4a45a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL DokanIsFileSystemRunning </td>
+          <td>(</td>
+          <td class="paramtype">_In_ DOKAN_HANDLE&#160;</td>
+          <td class="paramname"><em>DokanInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the FileSystem is still running or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DokanInstance</td><td>The dokan mount context created by <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the FileSystem is still running or not. </dd></dl>
 
 </div>
 </div>
@@ -337,6 +469,7 @@ Functions</h2></td></tr>
 
 <p>Mount a new Dokan Volume. </p>
 <p>This function block until the device is unmounted. If the mount fails, it will directly return a <a class="el" href="group___dokan_main_result.html">DokanMainResult</a> error.</p>
+<p>See <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> to create mount Dokan Volume asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DokanOptions</td><td>a <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html">DOKAN_OPTIONS</a> that describe the mount. </td></tr>
@@ -348,12 +481,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga58cc5a921a84f54042f2ac04b27bbc75"></a>
+<a class="anchor" id="gaf8272128a34921d9514861363f0e22c0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DokanMapKernelToUserCreateFileFlags </td>
+          <td class="memname">VOID DokanMapKernelToUserCreateFileFlags </td>
           <td>(</td>
           <td class="paramtype">ACCESS_MASK&#160;</td>
           <td class="paramname"><em>DesiredAccess</em>, </td>
@@ -461,7 +594,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the handle to Access Token. </p>
-<p>This method needs be called in <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx">CreateFile</a> callback. The caller must call <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724211(v=vs.85).aspx">CloseHandle</a> for the returned handle.</p>
+<p>This method needs be called in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">DOKAN_OPERATIONS::ZwCreateFile</a> callback. The caller must call <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724211(v=vs.85).aspx">CloseHandle</a> for the returned handle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DokanFileInfo</td><td><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html">DOKAN_FILE_INFO</a> of the operation to extend. </td></tr>
@@ -472,25 +605,25 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga51be6eda3489e76bd0a649443b0fadc6"></a>
+<a class="anchor" id="ga69a6f398c65b17c0ce908aaa23dd817c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">VOID DokanReleaseMountPointList </td>
           <td>(</td>
-          <td class="paramtype">PDOKAN_CONTROL&#160;</td>
+          <td class="paramtype">PDOKAN_MOUNT_POINT_INFO&#160;</td>
           <td class="paramname"><em>list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Release Mount point list resources from <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a>. </p>
-<p>After <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a> call you will receive a dynamically allocated array of DOKAN_CONTROL. This array needs to be released when no longer needed by calling this function.</p>
+<p>Release Mount point list resources from <a class="el" href="group___dokan.html#gaafe0e4fde9e4a8f61c19c873ce29e2ae">DokanGetMountPointList</a>. </p>
+<p>After <a class="el" href="group___dokan.html#gaafe0e4fde9e4a8f61c19c873ce29e2ae">DokanGetMountPointList</a> call you will receive a dynamically allocated array of DOKAN_MOUNT_POINT_INFO. This array needs to be released when no longer needed by calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">list</td><td>Allocated array of DOKAN_CONTROL from <a class="el" href="group___dokan.html#ga7df1fb9ac0ed72c2b6186382d23a0fa2">DokanGetMountPointList</a>. </td></tr>
+    <tr><td class="paramname">list</td><td>Allocated array of DOKAN_MOUNT_POINT_INFO from <a class="el" href="group___dokan.html#gaafe0e4fde9e4a8f61c19c873ce29e2ae">DokanGetMountPointList</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -559,6 +692,25 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga03eb16c0f047a74c180217284436d4a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID DokanShutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release all allocated resources by <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a>. </p>
+<p>This should be called when the application no longer expects to create a new FileSystem with <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> and after all devices are unmount.</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___dokan_main_result.html">DokanMainResult</a> status. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="gae9ed3293f6830c8ace6419082434128a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -599,6 +751,41 @@ Functions</h2></td></tr>
 
 <p>Get the version of Dokan. The returned ULONG is the version number without the dots. </p>
 <dl class="section return"><dt>Returns</dt><dd>The version of Dokan </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga08219725d8c34a26ef88c337fdb18188"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD DokanWaitForFileSystemClosed </td>
+          <td>(</td>
+          <td class="paramtype">_In_ DOKAN_HANDLE&#160;</td>
+          <td class="paramname"><em>DokanInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_In_ DWORD&#160;</td>
+          <td class="paramname"><em>dwMilliseconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait until the FileSystem is unmount. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DokanInstance</td><td>The dokan mount context created by <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject">WaitForSingleObject</a> for a description of return values. </dd></dl>
 
 </div>
 </div>

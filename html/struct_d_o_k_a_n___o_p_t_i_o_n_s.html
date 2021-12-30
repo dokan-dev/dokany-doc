@@ -106,8 +106,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Data Fields</h2></td></tr>
 <tr class="memitem:a3a1a0f2bd42381d5eb6f53d82d473959"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a3a1a0f2bd42381d5eb6f53d82d473959">Version</a></td></tr>
 <tr class="separator:a3a1a0f2bd42381d5eb6f53d82d473959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac432d1d2e293dbdba6ab056a46c835b9"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#ac432d1d2e293dbdba6ab056a46c835b9">ThreadCount</a></td></tr>
-<tr class="separator:ac432d1d2e293dbdba6ab056a46c835b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877c4897df1b4eebff31e2df33fba0c2"><td class="memItemLeft" align="right" valign="top">BOOLEAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a877c4897df1b4eebff31e2df33fba0c2">SingleThread</a></td></tr>
+<tr class="separator:a877c4897df1b4eebff31e2df33fba0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed6d3cbd74669deedd1fdd698e81585"><td class="memItemLeft" align="right" valign="top">ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a2ed6d3cbd74669deedd1fdd698e81585">Options</a></td></tr>
 <tr class="separator:a2ed6d3cbd74669deedd1fdd698e81585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa981b36304c68c9084a7d25a18b0a29c"><td class="memItemLeft" align="right" valign="top">ULONG64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#aa981b36304c68c9084a7d25a18b0a29c">GlobalContext</a></td></tr>
@@ -122,6 +122,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a7d264c4d23e3a1ab6068e93cf0530bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32958deda4f26862bed52b654de9f94"><td class="memItemLeft" align="right" valign="top">ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#af32958deda4f26862bed52b654de9f94">SectorSize</a></td></tr>
 <tr class="separator:af32958deda4f26862bed52b654de9f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dc71b53604ad9b71e1fa690707455d"><td class="memItemLeft" align="right" valign="top">ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a18dc71b53604ad9b71e1fa690707455d">VolumeSecurityDescriptorLength</a></td></tr>
+<tr class="separator:a18dc71b53604ad9b71e1fa690707455d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb775f1b1063969bed1420353a5092d5"><td class="memItemLeft" align="right" valign="top">CHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#afb775f1b1063969bed1420353a5092d5">VolumeSecurityDescriptor</a> [VOLUME_SECURITY_DESCRIPTOR_MAX_SIZE]</td></tr>
+<tr class="separator:afb775f1b1063969bed1420353a5092d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dokan mount options used to describe Dokan device behavior. </p>
@@ -192,16 +196,16 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac432d1d2e293dbdba6ab056a46c835b9"></a>
+<a class="anchor" id="a877c4897df1b4eebff31e2df33fba0c2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">USHORT PDOKAN_OPTIONS::ThreadCount</td>
+          <td class="memname">BOOLEAN PDOKAN_OPTIONS::SingleThread</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Number of threads to be used by Dokan library internally. More threads will handle more events at the same time. </p>
+<p>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck. </p>
 
 </div>
 </div>
@@ -241,6 +245,32 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Version of the Dokan features requested without dots (version "123" is equal to Dokan version 1.2.3). </p>
+
+</div>
+</div>
+<a class="anchor" id="afb775f1b1063969bed1420353a5092d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR PDOKAN_OPTIONS::VolumeSecurityDescriptor[VOLUME_SECURITY_DESCRIPTOR_MAX_SIZE]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional Volume Security descriptor. See <a href="https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-initializesecuritydescriptor">InitializeSecurityDescriptor</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a18dc71b53604ad9b71e1fa690707455d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG PDOKAN_OPTIONS::VolumeSecurityDescriptorLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Length of the optional VolumeSecurityDescriptor provided. Set 0 will disable the option. </p>
 
 </div>
 </div>

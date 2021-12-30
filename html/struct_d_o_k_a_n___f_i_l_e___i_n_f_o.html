@@ -124,6 +124,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae714470f93942f19a73f9c15bc031746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ddeeefe1bf5ae462389f32eb6dd303a"><td class="memItemLeft" align="right" valign="top">UCHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a1ddeeefe1bf5ae462389f32eb6dd303a">WriteToEndOfFile</a></td></tr>
 <tr class="separator:a1ddeeefe1bf5ae462389f32eb6dd303a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319c1f5f2461f9fb7cce851dbcb8d7d2"><td class="memItemLeft" align="right" valign="top">PVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a319c1f5f2461f9fb7cce851dbcb8d7d2">ProcessingContext</a></td></tr>
+<tr class="separator:a319c1f5f2461f9fb7cce851dbcb8d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dokan file information on the current operation. </p>
@@ -176,7 +178,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A pointer to <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html" title="Dokan mount options used to describe Dokan device behavior. ">DOKAN_OPTIONS</a> which was passed to DokanMain. </p>
+<p>A pointer to <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html" title="Dokan mount options used to describe Dokan device behavior. ">DOKAN_OPTIONS</a> which was passed to <a class="el" href="group___dokan.html#ga099fb73df80893f9da337a2dd7a6634e">DokanMain</a> or <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a>. </p>
 
 </div>
 </div>
@@ -229,6 +231,19 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Process ID for the thread that originally requested a given I/O operation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a319c1f5f2461f9fb7cce851dbcb8d7d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PVOID PDOKAN_FILE_INFO::ProcessingContext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reserved. Used internally by Dokan library. Never modify. If the processing for the event requires extra data to be associated with it then a pointer to that data can be placed here </p>
 
 </div>
 </div>

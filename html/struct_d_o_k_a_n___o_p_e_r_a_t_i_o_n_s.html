@@ -164,9 +164,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a3eb6be7abc4aa9f5868fb8cb52ff4172"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a3eb6be7abc4aa9f5868fb8cb52ff4172">GetVolumeInformation</a> )(LPWSTR VolumeNameBuffer, DWORD VolumeNameSize, LPDWORD VolumeSerialNumber, LPDWORD MaximumComponentLength, LPDWORD FileSystemFlags, LPWSTR FileSystemNameBuffer, DWORD FileSystemNameSize, PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
 <tr class="memdesc:a3eb6be7abc4aa9f5868fb8cb52ff4172"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetVolumeInformation Dokan API callback.  <a href="#a3eb6be7abc4aa9f5868fb8cb52ff4172">More...</a><br /></td></tr>
 <tr class="separator:a3eb6be7abc4aa9f5868fb8cb52ff4172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de1d1fe723fc4a0ec19d0953277f7e7"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a7de1d1fe723fc4a0ec19d0953277f7e7">Mounted</a> )(PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
-<tr class="memdesc:a7de1d1fe723fc4a0ec19d0953277f7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mounted Dokan API callback.  <a href="#a7de1d1fe723fc4a0ec19d0953277f7e7">More...</a><br /></td></tr>
-<tr class="separator:a7de1d1fe723fc4a0ec19d0953277f7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84492c6a4ff0813c67986ece93c6d747"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a84492c6a4ff0813c67986ece93c6d747">Mounted</a> )(LPCWSTR MountPoint, PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
+<tr class="memdesc:a84492c6a4ff0813c67986ece93c6d747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mounted Dokan API callback.  <a href="#a84492c6a4ff0813c67986ece93c6d747">More...</a><br /></td></tr>
+<tr class="separator:a84492c6a4ff0813c67986ece93c6d747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84302512a77f83d10cfd33c33f0f33a7"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a84302512a77f83d10cfd33c33f0f33a7">Unmounted</a> )(PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
 <tr class="memdesc:a84302512a77f83d10cfd33c33f0f33a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmounted Dokan API callback.  <a href="#a84302512a77f83d10cfd33c33f0f33a7">More...</a><br /></td></tr>
 <tr class="separator:a84302512a77f83d10cfd33c33f0f33a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +176,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a404ee986a77c9a31bbc3ae13814352b1"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a404ee986a77c9a31bbc3ae13814352b1">SetFileSecurity</a> )(LPCWSTR FileName, PSECURITY_INFORMATION SecurityInformation, PSECURITY_DESCRIPTOR SecurityDescriptor, ULONG BufferLength, PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
 <tr class="memdesc:a404ee986a77c9a31bbc3ae13814352b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetFileSecurity Dokan API callback.  <a href="#a404ee986a77c9a31bbc3ae13814352b1">More...</a><br /></td></tr>
 <tr class="separator:a404ee986a77c9a31bbc3ae13814352b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d39dd80b71f6ae18e791969bb4c2a2"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa9d39dd80b71f6ae18e791969bb4c2a2">FindStreams</a> )(LPCWSTR FileName, <a class="el" href="dokan_8h.html#aa7d2239cd70caba191bc924cfcb813fa">PFillFindStreamData</a> FillFindStreamData, PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
-<tr class="memdesc:aa9d39dd80b71f6ae18e791969bb4c2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindStreams Dokan API callback.  <a href="#aa9d39dd80b71f6ae18e791969bb4c2a2">More...</a><br /></td></tr>
-<tr class="separator:aa9d39dd80b71f6ae18e791969bb4c2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d18e191a17f341020cfd18bcc29e721"><td class="memItemLeft" align="right" valign="top">NTSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a3d18e191a17f341020cfd18bcc29e721">FindStreams</a> )(LPCWSTR FileName, <a class="el" href="dokan_8h.html#a296f0a5a4f27d2a985f7c9128eec58a0">PFillFindStreamData</a> FillFindStreamData, PVOID FindStreamContext, PDOKAN_FILE_INFO DokanFileInfo)</td></tr>
+<tr class="memdesc:a3d18e191a17f341020cfd18bcc29e721"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindStreams Dokan API callback.  <a href="#a3d18e191a17f341020cfd18bcc29e721">More...</a><br /></td></tr>
+<tr class="separator:a3d18e191a17f341020cfd18bcc29e721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dokan API callbacks interface. </p>
@@ -345,12 +345,12 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
 
 </div>
 </div>
-<a class="anchor" id="aa9d39dd80b71f6ae18e791969bb4c2a2"></a>
+<a class="anchor" id="a3d18e191a17f341020cfd18bcc29e721"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NTSTATUS( * PDOKAN_OPERATIONS::FindStreams) (LPCWSTR FileName, <a class="el" href="dokan_8h.html#aa7d2239cd70caba191bc924cfcb813fa">PFillFindStreamData</a> FillFindStreamData, PDOKAN_FILE_INFO DokanFileInfo)</td>
+          <td class="memname">NTSTATUS( * PDOKAN_OPERATIONS::FindStreams) (LPCWSTR FileName, <a class="el" href="dokan_8h.html#a296f0a5a4f27d2a985f7c9128eec58a0">PFillFindStreamData</a> FillFindStreamData, PVOID FindStreamContext, PDOKAN_FILE_INFO DokanFileInfo)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -362,6 +362,7 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
     <tr><td class="paramname">FillFindStreamData</td><td>Callback that has to be called with PWIN32_FIND_STREAM_DATA that contain stream information. </td></tr>
+    <tr><td class="paramname">FindStreamContext</td><td>Context for the event to pass to the callback FillFindStreamData. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
   </dd>
@@ -540,20 +541,22 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
 
 </div>
 </div>
-<a class="anchor" id="a7de1d1fe723fc4a0ec19d0953277f7e7"></a>
+<a class="anchor" id="a84492c6a4ff0813c67986ece93c6d747"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NTSTATUS( * PDOKAN_OPERATIONS::Mounted) (PDOKAN_FILE_INFO DokanFileInfo)</td>
+          <td class="memname">NTSTATUS( * PDOKAN_OPERATIONS::Mounted) (LPCWSTR MountPoint, PDOKAN_FILE_INFO DokanFileInfo)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Mounted Dokan API callback. </p>
 <p>Called when Dokan successfully mounts the volume.</p>
+<p>If <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gaf32d886fd9e36727667e27a1ca4c3285">DOKAN_OPTION_MOUNT_MANAGER</a> is enabled and the drive letter requested is busy, the MountPoint can contain a different drive letter that the mount manager assigned us.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">MountPoint</td><td>The mount point assign to the instance. </td></tr>
     <tr><td class="paramname">DokanFileInfo</td><td>Information about the file or directory. </td></tr>
   </table>
   </dd>
@@ -789,7 +792,7 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>STATUS_SUCCESS</code> on success or <code>NTSTATUS</code> appropriate to the request result. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a7de1d1fe723fc4a0ec19d0953277f7e7" title="Mounted Dokan API callback. ">Mounted</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a84492c6a4ff0813c67986ece93c6d747" title="Mounted Dokan API callback. ">Mounted</a> </dd></dl>
 
 </div>
 </div>
@@ -852,7 +855,7 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
 <dl class="section return"><dt>Returns</dt><dd><code>STATUS_SUCCESS</code> on success or NTSTATUS appropriate to the request result. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566424(v=vs.85).aspx">See ZwCreateFile for more information about the parameters of this callback (MSDN).</a> </dd>
 <dd>
-<a class="el" href="group___dokan.html#ga58cc5a921a84f54042f2ac04b27bbc75" title="Convert DOKAN_OPERATIONS::ZwCreateFile parameters to CreateFile parameters. ">DokanMapKernelToUserCreateFileFlags</a> </dd></dl>
+<a class="el" href="group___dokan.html#gaf8272128a34921d9514861363f0e22c0" title="Convert DOKAN_OPERATIONS::ZwCreateFile parameters to CreateFile parameters. ">DokanMapKernelToUserCreateFileFlags</a> </dd></dl>
 
 </div>
 </div>
