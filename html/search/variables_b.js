@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['opencount',['OpenCount',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#a3d994835f83fc9eb81913398d44963f2',1,'DOKAN_OPEN_INFO']]],
-  ['options',['Options',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a2ed6d3cbd74669deedd1fdd698e81585',1,'DOKAN_OPTIONS']]]
+  ['nameinformation',['NameInformation',['../struct_f_i_l_e___a_l_l___i_n_f_o_r_m_a_t_i_o_n.html#aa167b6d84f4197394508bffd59d57cad',1,'FILE_ALL_INFORMATION']]],
+  ['nextentryoffset',['NextEntryOffset',['../struct_f_i_l_e___d_i_r_e_c_t_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html#a39d2817a2141a25d281bc34630a03e9c',1,'FILE_DIRECTORY_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___f_u_l_l___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a3d0ee3903ec614a4d8ad5deb2464100f',1,'FILE_FULL_DIR_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___i_d___f_u_l_l___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a04af79dbf88e52a6db45bd423186d432',1,'FILE_ID_FULL_DIR_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#ab8ce6f8e6e0f12807fe9c7b7912ff5fb',1,'FILE_BOTH_DIR_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___i_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a5dab91bc13ec521722db82b6640a5e7e',1,'FILE_ID_BOTH_DIR_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___i_d___e_x_t_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a45f6a1f69ea0c1166779f488bedae797',1,'FILE_ID_EXTD_BOTH_DIR_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___n_a_m_e_s___i_n_f_o_r_m_a_t_i_o_n.html#ac9c31d9b43c75972b95a8f690319eef9',1,'FILE_NAMES_INFORMATION::NextEntryOffset()'],['../struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html#afae40b88e123eb762ca37688870a7e06',1,'FILE_STREAM_INFORMATION::NextEntryOffset()']]],
+  ['nocache',['Nocache',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#ae714470f93942f19a73f9c15bc031746',1,'DOKAN_FILE_INFO']]],
+  ['notifyhandle',['NotifyHandle',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ac40c01f02223d35b03420dfe87273766',1,'DOKAN_INSTANCE']]],
+  ['numberofbytestransferred',['NumberOfBytesTransferred',['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a84e5418b9545cb23f58803e85531d334',1,'DOKAN_IO_BATCH']]],
+  ['numberoflinks',['NumberOfLinks',['../struct_f_i_l_e___s_t_a_n_d_a_r_d___i_n_f_o_r_m_a_t_i_o_n.html#a5523b56228e171d7d99beb7b9edb5052',1,'FILE_STANDARD_INFORMATION']]]
 ];

@@ -96,28 +96,110 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">PDOKAN_IO_BATCH Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dokan IO batch buffer.  
+ <a href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dokani_8h_source.html">dokani.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ab585dec10417eee87a1f8c5a1a1daf79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab585dec10417eee87a1f8c5a1a1daf79"></a>
-PDOKAN_INSTANCE&#160;</td><td class="memItemRight" valign="bottom"><b>DokanInstance</b></td></tr>
+<tr class="memitem:ab585dec10417eee87a1f8c5a1a1daf79"><td class="memItemLeft" align="right" valign="top">PDOKAN_INSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#ab585dec10417eee87a1f8c5a1a1daf79">DokanInstance</a></td></tr>
 <tr class="separator:ab585dec10417eee87a1f8c5a1a1daf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84e5418b9545cb23f58803e85531d334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84e5418b9545cb23f58803e85531d334"></a>
-DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>NumberOfBytesTransferred</b></td></tr>
+<tr class="memitem:a84e5418b9545cb23f58803e85531d334"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a84e5418b9545cb23f58803e85531d334">NumberOfBytesTransferred</a></td></tr>
 <tr class="separator:a84e5418b9545cb23f58803e85531d334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30a006cda48cedfe1857bcd9acc468c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30a006cda48cedfe1857bcd9acc468c5"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>MainPullThread</b></td></tr>
+<tr class="memitem:a30a006cda48cedfe1857bcd9acc468c5"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a30a006cda48cedfe1857bcd9acc468c5">MainPullThread</a></td></tr>
 <tr class="separator:a30a006cda48cedfe1857bcd9acc468c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536ef58702ba6988933bded8cc9553b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a536ef58702ba6988933bded8cc9553b1"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>PoolAllocated</b></td></tr>
+<tr class="memitem:a536ef58702ba6988933bded8cc9553b1"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a536ef58702ba6988933bded8cc9553b1">PoolAllocated</a></td></tr>
 <tr class="separator:a536ef58702ba6988933bded8cc9553b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857f5a29d62ac3ba53d0566f32fd48af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a857f5a29d62ac3ba53d0566f32fd48af"></a>
-LONG&#160;</td><td class="memItemRight" valign="bottom"><b>EventContextBatchCount</b></td></tr>
+<tr class="memitem:a857f5a29d62ac3ba53d0566f32fd48af"><td class="memItemLeft" align="right" valign="top">LONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a857f5a29d62ac3ba53d0566f32fd48af">EventContextBatchCount</a></td></tr>
 <tr class="separator:a857f5a29d62ac3ba53d0566f32fd48af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea36e4c8040662061a2424559f88e83b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea36e4c8040662061a2424559f88e83b"></a>
-EVENT_CONTEXT&#160;</td><td class="memItemRight" valign="bottom"><b>EventContext</b> [1]</td></tr>
+<tr class="memitem:aea36e4c8040662061a2424559f88e83b"><td class="memItemLeft" align="right" valign="top">EVENT_CONTEXT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#aea36e4c8040662061a2424559f88e83b">EventContext</a> [1]</td></tr>
 <tr class="separator:aea36e4c8040662061a2424559f88e83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dokan IO batch buffer. </p>
+<p>This is used to pull batch of events from the kernel.</p>
+<p>For each EVENT_CONTEXT that is pulled from the kernel, a <a class="el" href="struct_d_o_k_a_n___i_o___e_v_e_n_t.html" title="Dokan IO Event. ">DOKAN_IO_EVENT</a> is allocated with its EventContext pointer placed to the IoBatch buffer. <a class="el" href="struct_d_o_k_a_n___i_o___e_v_e_n_t.html" title="Dokan IO Event. ">DOKAN_IO_EVENT</a> will be dispatched for being processed by a pool thread (or the main pull thread). When the event is processed, the <a class="el" href="struct_d_o_k_a_n___i_o___e_v_e_n_t.html" title="Dokan IO Event. ">DOKAN_IO_EVENT</a> will be freed and the EventContextBatchCount will be decremented. When it reaches 0, the buffer is free or pushed to the memory pool. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="ab585dec10417eee87a1f8c5a1a1daf79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PDOKAN_INSTANCE PDOKAN_IO_BATCH::DokanInstance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dokan instance linked to the batch </p>
+
+</div>
+</div>
+<a class="anchor" id="aea36e4c8040662061a2424559f88e83b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EVENT_CONTEXT PDOKAN_IO_BATCH::EventContext[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The actual buffer used to pull events from kernel. It may contain multiple EVENT_CONTEXT depending on what the kernel has to offer right now. A high activity will generate multiple EVENT_CONTEXT to be batched in a single pull. </p>
+
+</div>
+</div>
+<a class="anchor" id="a857f5a29d62ac3ba53d0566f32fd48af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LONG PDOKAN_IO_BATCH::EventContextBatchCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of actual EVENT_CONTEXT stored in EventContext. This is used as a shared buffer counter that is decremented when an event is processed. When it reaches 0, the buffer is free or pushed to the memory pool. </p>
+
+</div>
+</div>
+<a class="anchor" id="a30a006cda48cedfe1857bcd9acc468c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL PDOKAN_IO_BATCH::MainPullThread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether it is used by the Main pull thread that wait indefinitely in kernel compared to volatile pool threads </p>
+
+</div>
+</div>
+<a class="anchor" id="a84e5418b9545cb23f58803e85531d334"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD PDOKAN_IO_BATCH::NumberOfBytesTransferred</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size read from kernel that is hold in EventContext </p>
+
+</div>
+</div>
+<a class="anchor" id="a536ef58702ba6988933bded8cc9553b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL PDOKAN_IO_BATCH::PoolAllocated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether this object was allocated from the memory pool. Large Write events will allocate a specific buffer that will not come from the memory pool. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="dokani_8h_source.html">dokani.h</a></li>
 </ul>

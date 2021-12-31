@@ -4,5 +4,6 @@ var searchData=
   ['getfileinformation',['GetFileInformation',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#af06a3e372ed1ddbfe89e2f5046373dfd',1,'DOKAN_OPERATIONS']]],
   ['getfilesecurity',['GetFileSecurity',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a156509b0091c423ee8277cbafb40b26c',1,'DOKAN_OPERATIONS']]],
   ['getvolumeinformation',['GetVolumeInformation',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a3eb6be7abc4aa9f5868fb8cb52ff4172',1,'DOKAN_OPERATIONS']]],
-  ['globalcontext',['GlobalContext',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#aa981b36304c68c9084a7d25a18b0a29c',1,'DOKAN_OPTIONS']]]
+  ['globalcontext',['GlobalContext',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#aa981b36304c68c9084a7d25a18b0a29c',1,'DOKAN_OPTIONS']]],
+  ['globaldevice',['GlobalDevice',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ac146d84ed31f5832cc8ea3702cefa7d6',1,'DOKAN_INSTANCE']]]
 ];

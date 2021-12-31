@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['readfile',['ReadFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a92457133b49740e54142183f90efd723',1,'DOKAN_OPERATIONS']]],
-  ['reparsedatalength',['ReparseDataLength',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#a1be0389ceec5ec1ef98024f1d58413fe',1,'REPARSE_DATA_BUFFER']]],
-  ['reparsepointtag',['ReparsePointTag',['../struct_f_i_l_e___i_d___e_x_t_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#af94a51bb6115959e1c4fd20cebd1da16',1,'FILE_ID_EXTD_BOTH_DIR_INFORMATION']]],
-  ['reparsetag',['ReparseTag',['../struct_f_i_l_e___a_t_t_r_i_b_u_t_e___t_a_g___i_n_f_o_r_m_a_t_i_o_n.html#a1828603c50dbf6555ef5bed827acd318',1,'FILE_ATTRIBUTE_TAG_INFORMATION::ReparseTag()'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#a0f12f0442ad043292f2dfdafd9b5e736',1,'REPARSE_DATA_BUFFER::ReparseTag()']]],
-  ['replaceifexists',['ReplaceIfExists',['../struct_f_i_l_e___l_i_n_k___i_n_f_o_r_m_a_t_i_o_n.html#a2802d97da1a7b92f69ee98175e7972a7',1,'FILE_LINK_INFORMATION::ReplaceIfExists()'],['../struct_f_i_l_e___r_e_n_a_m_e___i_n_f_o_r_m_a_t_i_o_n.html#ac81fd5664d2186f2a7b8dbc56b7db817',1,'FILE_RENAME_INFORMATION::ReplaceIfExists()']]],
-  ['reserved',['Reserved',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#a93df2e0335486de91a5a643cf27dda40',1,'REPARSE_DATA_BUFFER']]],
-  ['rootdirectory',['RootDirectory',['../struct_f_i_l_e___l_i_n_k___i_n_f_o_r_m_a_t_i_o_n.html#ad116ef591e59931220ee2fd1bc7eceb3',1,'FILE_LINK_INFORMATION::RootDirectory()'],['../struct_f_i_l_e___r_e_n_a_m_e___i_n_f_o_r_m_a_t_i_o_n.html#a371cd89db86ee741ec233bac72747efc',1,'FILE_RENAME_INFORMATION::RootDirectory()']]]
+  ['pagingio',['PagingIo',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a9848c91781eb39690963cdf5fadb1663',1,'DOKAN_FILE_INFO']]],
+  ['pathbuffer',['PathBuffer',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#aa696953887338a2a8be619f571d044bc',1,'REPARSE_DATA_BUFFER']]],
+  ['poolallocated',['PoolAllocated',['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a536ef58702ba6988933bded8cc9553b1',1,'DOKAN_IO_BATCH::PoolAllocated()'],['../struct_d_o_k_a_n___i_o___e_v_e_n_t.html#a1f37bc390c29f57b49f3623037b1f7e9',1,'DOKAN_IO_EVENT::PoolAllocated()']]],
+  ['positioninformation',['PositionInformation',['../struct_f_i_l_e___a_l_l___i_n_f_o_r_m_a_t_i_o_n.html#a49ebbb0470dc0d2c45c8db0ad4ed8677',1,'FILE_ALL_INFORMATION']]],
+  ['printnamelength',['PrintNameLength',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#ac0996dc6625aa2e07a450a69ee382471',1,'REPARSE_DATA_BUFFER']]],
+  ['printnameoffset',['PrintNameOffset',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#ab253c3b50243235e917087a4b09a86e6',1,'REPARSE_DATA_BUFFER']]],
+  ['processid',['ProcessId',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#aacbf096bec8a2521706c95ba6691cc99',1,'DOKAN_FILE_INFO']]],
+  ['processingcontext',['ProcessingContext',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a319c1f5f2461f9fb7cce851dbcb8d7d2',1,'DOKAN_FILE_INFO']]]
 ];

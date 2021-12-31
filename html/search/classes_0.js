@@ -10,6 +10,5 @@ var searchData=
   ['dokan_5fopen_5finfo',['DOKAN_OPEN_INFO',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html',1,'']]],
   ['dokan_5foperations',['DOKAN_OPERATIONS',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html',1,'']]],
   ['dokan_5foptions',['DOKAN_OPTIONS',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html',1,'']]],
-  ['dokan_5foverlapped',['DOKAN_OVERLAPPED',['../struct_d_o_k_a_n___o_v_e_r_l_a_p_p_e_d.html',1,'']]],
   ['dokan_5fvector',['DOKAN_VECTOR',['../struct_d_o_k_a_n___v_e_c_t_o_r.html',1,'']]]
 ];
