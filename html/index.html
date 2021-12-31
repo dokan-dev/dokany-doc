@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>dokanctl.exe /u DriveLetter </p>
 </blockquote>
 <h2>Network Provider</h2>
-<p>If mounting is done with <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga6db515a2ec6fd8e19ac98be3aab75a31">DOKAN_OPTION_NETWORK</a>, Dokan Network Provider must be used to ensure correct functionality. This file (dokannp2.dll) <em>must</em> be copied to <code>WINDIR%\system32</code> and the provider can be registered on a system with <code>dokanctl.exe /i n</code> command.</p>
+<p>If mounting is done with <a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga6db515a2ec6fd8e19ac98be3aab75a31">DOKAN_OPTION_NETWORK</a>, Dokan Network Provider must be used to ensure correct functionality. The files <code>dokan2.dll</code> &amp; <code>dokannp2.dll</code> <em>must</em> be copied to <code>WINDIR%\system32</code> and the provider can be registered on a system with <code>dokanctl.exe /i n</code> command.</p>
 <p>Without this <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa378776%28v=vs.85%29.aspx">Network Provider</a>, Windows Explorer will not properly handle virtual drives mounted as network shares and drives could appear disconnected.</p>
 <p>If Network Redirector is setup using a UNC Name, Dokan Network Provider will assign a UNC Name to the drive label automatically.</p>
 <h2>Testing a File System</h2>
