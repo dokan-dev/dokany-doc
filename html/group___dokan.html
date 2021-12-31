@@ -118,7 +118,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga601e46032af44a7053a0ed1cd7a8f910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all required Dokan internal resources.  <a href="#ga601e46032af44a7053a0ed1cd7a8f910">More...</a><br /></td></tr>
 <tr class="separator:ga601e46032af44a7053a0ed1cd7a8f910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga03eb16c0f047a74c180217284436d4a3"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga03eb16c0f047a74c180217284436d4a3">DokanShutdown</a> ()</td></tr>
-<tr class="memdesc:ga03eb16c0f047a74c180217284436d4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all allocated resources by <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a>.  <a href="#ga03eb16c0f047a74c180217284436d4a3">More...</a><br /></td></tr>
+<tr class="memdesc:ga03eb16c0f047a74c180217284436d4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all allocated resources by <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a> when they are no longer needed.  <a href="#ga03eb16c0f047a74c180217284436d4a3">More...</a><br /></td></tr>
 <tr class="separator:ga03eb16c0f047a74c180217284436d4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga099fb73df80893f9da337a2dd7a6634e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga099fb73df80893f9da337a2dd7a6634e">DokanMain</a> (PDOKAN_OPTIONS DokanOptions, PDOKAN_OPERATIONS DokanOperations)</td></tr>
 <tr class="memdesc:ga099fb73df80893f9da337a2dd7a6634e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume.  <a href="#ga099fb73df80893f9da337a2dd7a6634e">More...</a><br /></td></tr>
@@ -365,7 +365,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize all required Dokan internal resources. </p>
-<p>This needs to be called only once before trying to use <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> for the first time. Otherwise <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> will just fail. </p>
+<p>This needs to be called only once before trying to use <a class="el" href="group___dokan.html#ga099fb73df80893f9da337a2dd7a6634e">DokanMain</a> or <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> for the first time. Otherwise both will fail and raise an exception. </p>
 
 </div>
 </div>
@@ -705,9 +705,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Release all allocated resources by <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a>. </p>
-<p>This should be called when the application no longer expects to create a new FileSystem with <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> and after all devices are unmount.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___dokan_main_result.html">DokanMainResult</a> status. </dd></dl>
+<p>Release all allocated resources by <a class="el" href="group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910">DokanInit</a> when they are no longer needed. </p>
+<p>This should be called when the application no longer expects to create a new FileSystem with <a class="el" href="group___dokan.html#ga099fb73df80893f9da337a2dd7a6634e">DokanMain</a> or <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> and after all devices are unmount. </p>
 
 </div>
 </div>
