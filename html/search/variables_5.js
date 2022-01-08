@@ -8,6 +8,7 @@ var searchData=
   ['filesystemattributes',['FileSystemAttributes',['../struct_f_i_l_e___f_s___a_t_t_r_i_b_u_t_e___i_n_f_o_r_m_a_t_i_o_n.html#afc436cc835c9fdc6072be0d5d0a00900',1,'FILE_FS_ATTRIBUTE_INFORMATION']]],
   ['filesystemname',['FileSystemName',['../struct_f_i_l_e___f_s___a_t_t_r_i_b_u_t_e___i_n_f_o_r_m_a_t_i_o_n.html#a775c58e728b0c76847a4565e8764962d',1,'FILE_FS_ATTRIBUTE_INFORMATION']]],
   ['filesystemnamelength',['FileSystemNameLength',['../struct_f_i_l_e___f_s___a_t_t_r_i_b_u_t_e___i_n_f_o_r_m_a_t_i_o_n.html#ab9b1e3c819ea6b50d8534f1a235401f0',1,'FILE_FS_ATTRIBUTE_INFORMATION']]],
+  ['filesystemstopped',['FileSystemStopped',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a34581f8dfcb149c54b6455dc35da260c',1,'DOKAN_INSTANCE']]],
   ['finddata',['FindData',['../struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html#a24d034ba1b515b79e827ec2086f6a868',1,'DOKAN_FIND_DATA']]],
   ['findfiles',['FindFiles',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e',1,'DOKAN_OPERATIONS']]],
   ['findfileswithpattern',['FindFilesWithPattern',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0f280feb3cbff134e997bec6d6db5171',1,'DOKAN_OPERATIONS']]],
