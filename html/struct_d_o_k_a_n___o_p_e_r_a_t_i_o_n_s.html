@@ -603,6 +603,7 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
 
 <p>ReadFile Dokan API callback. </p>
 <p>ReadFile callback on the file previously opened in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a>. It can be called by different threads at the same time, so the read/context has to be thread safe.</p>
+<p>When apps make use of memory mapped files, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ab1aa9dab25dcb38903e0790c36b87cce" title="WriteFile Dokan API callback. ">DOKAN_OPERATIONS.WriteFile</a> or <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a92457133b49740e54142183f90efd723" title="ReadFile Dokan API callback. ">DOKAN_OPERATIONS.ReadFile</a> functions may be invoked after <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643" title="Cleanup Dokan API callback. ">DOKAN_OPERATIONS.Cleanup</a> in order to complete the I/O operations. The file system application should also properly work in this case.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -808,6 +809,7 @@ The search pattern is a Windows MS-DOS-style expression. It can contain wild car
 
 <p>WriteFile Dokan API callback. </p>
 <p>WriteFile callback on the file previously opened in <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183" title="CreateFile Dokan API callback. ">DOKAN_OPERATIONS.ZwCreateFile</a> It can be called by different threads at the same time, sp the write/context has to be thread safe.</p>
+<p>When apps make use of memory mapped files, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ab1aa9dab25dcb38903e0790c36b87cce" title="WriteFile Dokan API callback. ">DOKAN_OPERATIONS.WriteFile</a> or <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a92457133b49740e54142183f90efd723" title="ReadFile Dokan API callback. ">DOKAN_OPERATIONS.ReadFile</a> functions may be invoked after <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643" title="Cleanup Dokan API callback. ">DOKAN_OPERATIONS.Cleanup</a> in order to complete the I/O operations. The file system application should also properly work in this case.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
