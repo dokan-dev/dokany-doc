@@ -136,6 +136,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a5a3a83508f98781e642d7f88fb49acab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34581f8dfcb149c54b6455dc35da260c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a34581f8dfcb149c54b6455dc35da260c">FileSystemStopped</a></td></tr>
 <tr class="separator:a34581f8dfcb149c54b6455dc35da260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f975f582e7b8061b0f8571fc10df448"><td class="memItemLeft" align="right" valign="top">LONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a4f975f582e7b8061b0f8571fc10df448">UnmountedCalled</a></td></tr>
+<tr class="separator:a4f975f582e7b8061b0f8571fc10df448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dokan mount instance informations. </p>
@@ -350,6 +352,19 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>UNC name used for network volume </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f975f582e7b8061b0f8571fc10df448"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LONG PDOKAN_INSTANCE::UnmountedCalled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the Unmounted notification was called. Only the first incrementer thread will call it. </p>
 
 </div>
 </div>

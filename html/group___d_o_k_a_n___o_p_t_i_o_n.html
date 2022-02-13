@@ -120,11 +120,26 @@ Macros</h2></td></tr>
 <tr class="separator:ga8fcbd3424c84f476bd8444ae8c4c8b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4d7082d382e5befb22856c0eef38307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#gaf4d7082d382e5befb22856c0eef38307">DOKAN_OPTION_DISPATCH_DRIVER_LOGS</a>&#160;&#160;&#160;(1 &lt;&lt; 11)</td></tr>
 <tr class="separator:gaf4d7082d382e5befb22856c0eef38307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga746eed89ee5a4aa3fe97d00e621e8f3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_o_k_a_n___o_p_t_i_o_n.html#ga746eed89ee5a4aa3fe97d00e621e8f3a">DOKAN_OPTION_ALLOW_IPC_BATCHING</a>&#160;&#160;&#160;(1 &lt;&lt; 12)</td></tr>
+<tr class="separator:ga746eed89ee5a4aa3fe97d00e621e8f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>All DOKAN_OPTION flags used in <a class="el" href="struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a2ed6d3cbd74669deedd1fdd698e81585">DOKAN_OPTIONS.Options</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html" title="Dokan file information on the current operation. ">DOKAN_FILE_INFO</a> </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga746eed89ee5a4aa3fe97d00e621e8f3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOKAN_OPTION_ALLOW_IPC_BATCHING&#160;&#160;&#160;(1 &lt;&lt; 12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pull batches of events from the driver instead of a single one and execute them parallelly. This option should only be used on computers with low cpu count and userland filesystem taking time to process requests (like remote storage). </p>
+
+</div>
+</div>
 <a class="anchor" id="ga2b4ad209c39c04c593ded24fb36cb631"></a>
 <div class="memitem">
 <div class="memproto">

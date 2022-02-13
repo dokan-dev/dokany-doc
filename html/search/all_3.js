@@ -31,6 +31,7 @@ var searchData=
   ['dokan_5fopen_5finfo',['DOKAN_OPEN_INFO',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html',1,'']]],
   ['dokan_5foperations',['DOKAN_OPERATIONS',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html',1,'']]],
   ['dokan_5foption',['DOKAN_OPTION',['../group___d_o_k_a_n___o_p_t_i_o_n.html',1,'']]],
+  ['dokan_5foption_5fallow_5fipc_5fbatching',['DOKAN_OPTION_ALLOW_IPC_BATCHING',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga746eed89ee5a4aa3fe97d00e621e8f3a',1,'dokan.h']]],
   ['dokan_5foption_5falt_5fstream',['DOKAN_OPTION_ALT_STREAM',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga2b4ad209c39c04c593ded24fb36cb631',1,'dokan.h']]],
   ['dokan_5foption_5fcurrent_5fsession',['DOKAN_OPTION_CURRENT_SESSION',['../group___d_o_k_a_n___o_p_t_i_o_n.html#gafeb9b73b1fe996d45290c3fc4d80562c',1,'dokan.h']]],
   ['dokan_5foption_5fdebug',['DOKAN_OPTION_DEBUG',['../group___d_o_k_a_n___o_p_t_i_o_n.html#ga9892226236c01bb264d701023cfc539b',1,'dokan.h']]],

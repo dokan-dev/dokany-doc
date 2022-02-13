@@ -4,5 +4,6 @@ var searchData=
   ['unicode_5fstring',['UNICODE_STRING',['../struct_u_n_i_c_o_d_e___s_t_r_i_n_g.html',1,'']]],
   ['unlockfile',['UnlockFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a267dd56af4da19e93db535e4091d7737',1,'DOKAN_OPERATIONS']]],
   ['unmounted',['Unmounted',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a84302512a77f83d10cfd33c33f0f33a7',1,'DOKAN_OPERATIONS']]],
+  ['unmountedcalled',['UnmountedCalled',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a4f975f582e7b8061b0f8571fc10df448',1,'DOKAN_INSTANCE']]],
   ['usercontext',['UserContext',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#af0a0c7edf15cbdf7c198eb915f54201a',1,'DOKAN_OPEN_INFO']]]
 ];
