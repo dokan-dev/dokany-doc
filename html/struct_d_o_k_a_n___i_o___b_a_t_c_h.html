@@ -110,6 +110,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a84e5418b9545cb23f58803e85531d334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a006cda48cedfe1857bcd9acc468c5"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a30a006cda48cedfe1857bcd9acc468c5">MainPullThread</a></td></tr>
 <tr class="separator:a30a006cda48cedfe1857bcd9acc468c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536ef58702ba6988933bded8cc9553b1"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a536ef58702ba6988933bded8cc9553b1">PoolAllocated</a></td></tr>
+<tr class="separator:a536ef58702ba6988933bded8cc9553b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857f5a29d62ac3ba53d0566f32fd48af"><td class="memItemLeft" align="right" valign="top">LONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a857f5a29d62ac3ba53d0566f32fd48af">EventContextBatchCount</a></td></tr>
 <tr class="separator:a857f5a29d62ac3ba53d0566f32fd48af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea36e4c8040662061a2424559f88e83b"><td class="memItemLeft" align="right" valign="top">EVENT_CONTEXT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_o_k_a_n___i_o___b_a_t_c_h.html#aea36e4c8040662061a2424559f88e83b">EventContext</a> [1]</td></tr>
@@ -182,6 +184,19 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Size read from kernel that is hold in EventContext </p>
+
+</div>
+</div>
+<a class="anchor" id="a536ef58702ba6988933bded8cc9553b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL PDOKAN_IO_BATCH::PoolAllocated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether this object was allocated from the memory pool. Large Write events will allocate a specific buffer that will not come from the memory pool. </p>
 
 </div>
 </div>
