@@ -301,7 +301,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>FindFiles Dokan API callback. </p>
-<p>List all files in the requested path.</p>
+<p>List all files in the requested path. If this function is not implemented, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0f280feb3cbff134e997bec6d6db5171">DOKAN_OPERATIONS::FindFilesWithPattern</a> will instead be called with a wildcard as pattern.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
