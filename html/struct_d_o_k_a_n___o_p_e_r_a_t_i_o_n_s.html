@@ -301,7 +301,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>FindFiles Dokan API callback. </p>
-<p>List all files in the requested path <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0f280feb3cbff134e997bec6d6db5171">DOKAN_OPERATIONS::FindFilesWithPattern</a> is checked first. If it is not implemented or returns <code>STATUS_NOT_IMPLEMENTED</code>, then FindFiles is called, if implemented.</p>
+<p>List all files in the requested path.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -328,7 +328,7 @@ Data Fields</h2></td></tr>
 <p>FindFilesWithPattern Dokan API callback. </p>
 <p>Same as <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e">DOKAN_OPERATIONS::FindFiles</a> but with a search pattern.<br />
 The search pattern is a Windows MS-DOS-style expression. It can contain wild cards and extended characters or none of them. See <a class="el" href="group___dokan.html#ga2e8585b8730ee74c0cd0cadf3e8cb01a">DokanIsNameInExpression</a>.</p>
-<p>If the function is not implemented by not assigning the function pointer, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e">DOKAN_OPERATIONS::FindFiles</a> will be called instead and the result will be filtered internally by the library.</p>
+<p>If the function is not implemented by not assigning the function pointer, <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a85eaf4afc25a6d645b72ae59df78a27e">DOKAN_OPERATIONS::FindFiles</a> will be called instead and the result will be filtered internally by the library. It is recommended to have this implemented for performance reason.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PathName</td><td>Path requested by the Kernel on the FileSystem. </td></tr>
