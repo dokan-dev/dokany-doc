@@ -132,6 +132,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga08219725d8c34a26ef88c337fdb18188"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga08219725d8c34a26ef88c337fdb18188">DokanWaitForFileSystemClosed</a> (_In_ DOKAN_HANDLE DokanInstance, _In_ DWORD dwMilliseconds)</td></tr>
 <tr class="memdesc:ga08219725d8c34a26ef88c337fdb18188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the FileSystem is unmount.  <a href="#ga08219725d8c34a26ef88c337fdb18188">More...</a><br /></td></tr>
 <tr class="separator:ga08219725d8c34a26ef88c337fdb18188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad62af4c22ee4c984251dcae1f85abf49"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gad62af4c22ee4c984251dcae1f85abf49">DokanRegisterWaitForFileSystemClosed</a> (_In_ DOKAN_HANDLE DokanInstance, _Out_ PHANDLE WaitHandle, _In_ WAITORTIMERCALLBACKFUNC Callback, _In_ PVOID Context, ULONG dwMilliseconds)</td></tr>
+<tr class="memdesc:gad62af4c22ee4c984251dcae1f85abf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback for FileSystem unmount.  <a href="#gad62af4c22ee4c984251dcae1f85abf49">More...</a><br /></td></tr>
+<tr class="separator:gad62af4c22ee4c984251dcae1f85abf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbec14f5b5eb7276aea10d9284380f0b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#gabbec14f5b5eb7276aea10d9284380f0b">DokanUnregisterWaitForFileSystemClosed</a> (_In_ HANDLE WaitHandle, BOOL WaitForCallbacks)</td></tr>
+<tr class="memdesc:gabbec14f5b5eb7276aea10d9284380f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister callback for FileSystem unmount.  <a href="#gabbec14f5b5eb7276aea10d9284380f0b">More...</a><br /></td></tr>
+<tr class="separator:gabbec14f5b5eb7276aea10d9284380f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f238772042c20ff5ebf6eb3391d555d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___dokan.html#ga0f238772042c20ff5ebf6eb3391d555d">DokanCloseHandle</a> (_In_ DOKAN_HANDLE DokanInstance)</td></tr>
 <tr class="memdesc:ga0f238772042c20ff5ebf6eb3391d555d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount the Dokan instance.  <a href="#ga0f238772042c20ff5ebf6eb3391d555d">More...</a><br /></td></tr>
 <tr class="separator:ga0f238772042c20ff5ebf6eb3391d555d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -605,6 +611,63 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gad62af4c22ee4c984251dcae1f85abf49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL DokanRegisterWaitForFileSystemClosed </td>
+          <td>(</td>
+          <td class="paramtype">_In_ DOKAN_HANDLE&#160;</td>
+          <td class="paramname"><em>DokanInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_Out_ PHANDLE&#160;</td>
+          <td class="paramname"><em>WaitHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_In_ WAITORTIMERCALLBACKFUNC&#160;</td>
+          <td class="paramname"><em>Callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_In_ PVOID&#160;</td>
+          <td class="paramname"><em>Context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG&#160;</td>
+          <td class="paramname"><em>dwMilliseconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register callback for FileSystem unmount. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DokanInstance</td><td>The dokan mount context created by <a class="el" href="group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3">DokanCreateFileSystem</a> . </td></tr>
+    <tr><td class="paramname">WaitHandle</td><td>Handle to wait handle registration. This handle needs to be closed by calling <a href="https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-unregisterwait">UnregisterWait</a>, <a href="https://learn.microsoft.com/en-us/windows/win32/sync/unregisterwait">UnregisterWaitEx</a> or <a class="el" href="group___dokan.html#gabbec14f5b5eb7276aea10d9284380f0b">DokanUnregisterWaitForFileSystemClosed</a> to unregister the callback . </td></tr>
+    <tr><td class="paramname">Callback</td><td>Callback function to be called from a worker thread when file system is unmounted . </td></tr>
+    <tr><td class="paramname">Context</td><td>A context parameter to send to callback function . </td></tr>
+    <tr><td class="paramname">dwMilliseconds</td><td>The time-out interval, in milliseconds. See <a href="https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject">RegisterWaitForSingleObject</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if successful, FALSE otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga69a6f398c65b17c0ce908aaa23dd817c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -732,6 +795,42 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>TRUE</code> if device was unmounted or <code>FALSE</code> in case of failure or device not found. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabbec14f5b5eb7276aea10d9284380f0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL DokanUnregisterWaitForFileSystemClosed </td>
+          <td>(</td>
+          <td class="paramtype">_In_ HANDLE&#160;</td>
+          <td class="paramname"><em>WaitHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>WaitForCallbacks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister callback for FileSystem unmount. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WaitHandle</td><td>Handle returned as WaitHandle parameter in previous call to <a class="el" href="group___dokan.html#gad62af4c22ee4c984251dcae1f85abf49">DokanRegisterWaitForFileSystemClosed</a> . </td></tr>
+    <tr><td class="paramname">WaitForCallbacks</td><td>Indicates whether to wait for callbacks to complete before returning. Normally set to TRUE unless called from same thread as callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if successful, FALSE otherwise. </dd></dl>
 
 </div>
 </div>
