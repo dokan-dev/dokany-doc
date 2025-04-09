@@ -198,7 +198,7 @@ Data Fields</h2></td></tr>
 
 <p>Cleanup Dokan API callback. </p>
 <p>Cleanup request before <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a8cec45a9afcc0fc737fb765eb97c639d">CloseFile</a> is called.</p>
-<p>When <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> is <code>TRUE</code>, the file in Cleanup must be deleted. The function cannot fail therefore the filesystem need to ensure ahead that a the delete can safely happen during Cleanup. See DeleteFile documentation for explanation.</p>
+<p>When DOKAN_FILE_INFO.DeleteOnClose is <code>TRUE</code>, the file in Cleanup must be deleted. The function cannot fail therefore the filesystem need to ensure ahead that a the delete can safely happen during Cleanup. See DeleteFile documentation for explanation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -247,9 +247,9 @@ Data Fields</h2></td></tr>
 
 <p>DeleteDirectory Dokan API callback. </p>
 <p>Check if it is possible to delete a directory.</p>
-<p>DeleteDirectory will also be called with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
+<p>DeleteDirectory will also be called with DOKAN_FILE_INFO.DeleteOnClose set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
 <p>The Directory in DeleteDirectory should not be deleted, but instead must be checked as to whether or not it can be deleted, and <code>STATUS_SUCCESS</code> should be returned (when it can be deleted) or appropriate error codes, such as <code>STATUS_ACCESS_DENIED</code>, <code>STATUS_OBJECT_PATH_NOT_FOUND</code>, or <code>STATUS_DIRECTORY_NOT_EMPTY</code>, should be returned.</p>
-<p>When <code>STATUS_SUCCESS</code> is returned, a Cleanup call is received afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code>. Only then must the closing file be deleted.</p>
+<p>When <code>STATUS_SUCCESS</code> is returned, a Cleanup call is received afterwards with DOKAN_FILE_INFO.DeleteOnClose set to <code>TRUE</code>. Only then must the closing file be deleted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
@@ -273,9 +273,9 @@ Data Fields</h2></td></tr>
 
 <p>DeleteFile Dokan API callback. </p>
 <p>Check if it is possible to delete a file.</p>
-<p>DeleteFile will also be called with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
+<p>DeleteFile will also be called with DOKAN_FILE_INFO.DeleteOnClose set to <code>FALSE</code> to notify the driver when the file is no longer requested to be deleted.</p>
 <p>The file in DeleteFile should not be deleted, but instead the file must be checked as to whether or not it can be deleted, and <code>STATUS_SUCCESS</code> should be returned (when it can be deleted) or appropriate error codes, such as <code>STATUS_ACCESS_DENIED</code> or <code>STATUS_OBJECT_NAME_NOT_FOUND</code>, should be returned.</p>
-<p>When <code>STATUS_SUCCESS</code> is returned, a Cleanup call is received afterwards with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a89b3ba429fd6c98b1ee30d100f9441fb">DOKAN_FILE_INFO.DeleteOnClose</a> set to <code>TRUE</code>. Only then must the closing file be deleted.</p>
+<p>When <code>STATUS_SUCCESS</code> is returned, a Cleanup call is received afterwards with DOKAN_FILE_INFO.DeleteOnClose set to <code>TRUE</code>. Only then must the closing file be deleted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">FileName</td><td>File path requested by the Kernel on the FileSystem. </td></tr>
