@@ -152,7 +152,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Flag if the file has to be deleted during <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643" title="Cleanup Dokan API callback. ">DOKAN_OPERATIONS.Cleanup</a> event. </p>
+<p>Flag if the file has to be deleted during <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2780a352d1d83104843971bc551aa643">DOKAN_OPERATIONS::Cleanup</a> event.</p>
+<p>If a prior <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a40c2f61e1287237f5fd5c2690e795183">DOKAN_OPERATIONS::ZwCreateFile</a> call with <code>FILE_FLAG_DELETE_ON_CLOSE</code> or <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#abe28c21be4be0c61148c9adc631bb5db">DOKAN_OPERATIONS::DeleteFile</a> / <a class="el" href="struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a50423436230244043ae9124cc9a08ce3">DOKAN_OPERATIONS::DeleteDirectory</a> with <a class="el" href="struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a876b7f9015f341d71ad283e35f90137b">DOKAN_FILE_INFO.DeletePending</a> set to <code>TRUE</code> succeed on an object, the last handle open on that object will have this variable set to <code>TRUE</code> and therefore will have to delete the object. </p>
 
 </div>
 </div>
