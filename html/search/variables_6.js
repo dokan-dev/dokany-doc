@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['getdiskfreespace',['GetDiskFreeSpace',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a640f8ea90833fcd8885f59e63a58f3a7',1,'DOKAN_OPERATIONS']]],
-  ['getfileinformation',['GetFileInformation',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#af06a3e372ed1ddbfe89e2f5046373dfd',1,'DOKAN_OPERATIONS']]],
-  ['getfilesecurity',['GetFileSecurity',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a156509b0091c423ee8277cbafb40b26c',1,'DOKAN_OPERATIONS']]],
-  ['getvolumeinformation',['GetVolumeInformation',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a3eb6be7abc4aa9f5868fb8cb52ff4172',1,'DOKAN_OPERATIONS']]],
-  ['globalcontext',['GlobalContext',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#aa981b36304c68c9084a7d25a18b0a29c',1,'DOKAN_OPTIONS']]],
-  ['globaldevice',['GlobalDevice',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ac146d84ed31f5832cc8ea3702cefa7d6',1,'DOKAN_INSTANCE']]]
+  ['getdiskfreespace_0',['GetDiskFreeSpace',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae326255ebe49db70b3cd545542500b07',1,'DOKAN_OPERATIONS']]],
+  ['getfileinformation_1',['GetFileInformation',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#af06c8ed5752d74b620499fa439f8c094',1,'DOKAN_OPERATIONS']]],
+  ['getfilesecurity_2',['GetFileSecurity',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#affd9645447dde8ff268ac7e0a7e3945a',1,'DOKAN_OPERATIONS']]],
+  ['getvolumeinformation_3',['GetVolumeInformation',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#acac43235fdff65ffd16493c128b8153b',1,'DOKAN_OPERATIONS']]],
+  ['globalcontext_4',['GlobalContext',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#aa981b36304c68c9084a7d25a18b0a29c',1,'DOKAN_OPTIONS']]],
+  ['globaldevice_5',['GlobalDevice',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ac146d84ed31f5832cc8ea3702cefa7d6',1,'DOKAN_INSTANCE']]]
 ];

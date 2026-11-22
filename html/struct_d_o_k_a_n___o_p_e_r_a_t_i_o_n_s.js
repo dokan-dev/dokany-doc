@@ -1,0 +1,28 @@
+var struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s =
+[
+    [ "Cleanup", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ac083a7245aea5ac05b46f095928eac9c", null ],
+    [ "CloseFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a7a8c752909072600148139849cf1f746", null ],
+    [ "DeleteDirectory", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aead58f066a6aaed6dc649b663c70c83e", null ],
+    [ "DeleteFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a6637d01503c215e319afbc269ac8cb79", null ],
+    [ "FindFiles", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae7424ea30de7816a86d1411b686b550b", null ],
+    [ "FindFilesWithPattern", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a06f2c18d8c0e083e629d0133f4ded84d", null ],
+    [ "FindStreams", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ad477b6a763be8e0303b7d735563bba67", null ],
+    [ "FlushFileBuffers", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa7c547a9716eaea111cf678dc6c274c5", null ],
+    [ "GetDiskFreeSpace", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae326255ebe49db70b3cd545542500b07", null ],
+    [ "GetFileInformation", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#af06c8ed5752d74b620499fa439f8c094", null ],
+    [ "GetFileSecurity", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#affd9645447dde8ff268ac7e0a7e3945a", null ],
+    [ "GetVolumeInformation", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#acac43235fdff65ffd16493c128b8153b", null ],
+    [ "LockFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aeb1651667cadf8068ca802236b2978ec", null ],
+    [ "Mounted", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae68fe49e7cb2cbde7aadc783fffa1307", null ],
+    [ "MoveFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a0989285967183b17042aa02b20d83254", null ],
+    [ "ReadFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a395ea30a11214edd113b3cd55b5759cd", null ],
+    [ "SetAllocationSize", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#abeebaa9c90c0fdf635a87e841831bef9", null ],
+    [ "SetEndOfFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a757fbbc2fe4f96a2cf26a53ec5118e03", null ],
+    [ "SetFileAttributes", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a393752dca2136a99034a0d6ad0205b22", null ],
+    [ "SetFileSecurity", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aaf96e8ff23df78ffe7b21e987bc7df1c", null ],
+    [ "SetFileTime", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae373e5369085317204389c7aaaf6edb8", null ],
+    [ "UnlockFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ab181becb6f42bdbd65dabd7ad0152bd7", null ],
+    [ "Unmounted", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ab150ca81060acffe6e5d0b87c9a9b90d", null ],
+    [ "WriteFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2ee913b25034827f6b35c43a1225666c", null ],
+    [ "ZwCreateFile", "struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa1d34023f9187ed6b62c10003f7b99d5", null ]
+];

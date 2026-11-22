@@ -1,0 +1,6 @@
+var union_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0funion_0e_8____unnamed0____ =
+[
+    [ "[struct].__unnamed0__.SymbolicLinkReparseBuffer", "struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_symbolic_link_reparse_buffer.html", "struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_symbolic_link_reparse_buffer" ],
+    [ "[struct].__unnamed0__.MountPointReparseBuffer", "struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_mount_point_reparse_buffer.html", "struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_mount_point_reparse_buffer" ],
+    [ "[struct].__unnamed0__.GenericReparseBuffer", "struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_generic_reparse_buffer.html", "struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_generic_reparse_buffer" ]
+];

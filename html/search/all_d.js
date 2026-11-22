@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['pagingio',['PagingIo',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a9848c91781eb39690963cdf5fadb1663',1,'DOKAN_FILE_INFO']]],
-  ['pathbuffer',['PathBuffer',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#aa696953887338a2a8be619f571d044bc',1,'REPARSE_DATA_BUFFER']]],
-  ['pfillfinddata',['PFillFindData',['../dokan_8h.html#a742c3cc39a0b8758075d8533c91ff13b',1,'dokan.h']]],
-  ['pfillfindstreamdata',['PFillFindStreamData',['../dokan_8h.html#a296f0a5a4f27d2a985f7c9128eec58a0',1,'dokan.h']]],
-  ['poolallocated',['PoolAllocated',['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a536ef58702ba6988933bded8cc9553b1',1,'DOKAN_IO_BATCH::PoolAllocated()'],['../struct_d_o_k_a_n___i_o___e_v_e_n_t.html#a1f37bc390c29f57b49f3623037b1f7e9',1,'DOKAN_IO_EVENT::PoolAllocated()']]],
-  ['positioninformation',['PositionInformation',['../struct_f_i_l_e___a_l_l___i_n_f_o_r_m_a_t_i_o_n.html#a49ebbb0470dc0d2c45c8db0ad4ed8677',1,'FILE_ALL_INFORMATION']]],
-  ['printnamelength',['PrintNameLength',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#ac0996dc6625aa2e07a450a69ee382471',1,'REPARSE_DATA_BUFFER']]],
-  ['printnameoffset',['PrintNameOffset',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#ab253c3b50243235e917087a4b09a86e6',1,'REPARSE_DATA_BUFFER']]],
-  ['processid',['ProcessId',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#aacbf096bec8a2521706c95ba6691cc99',1,'DOKAN_FILE_INFO']]],
-  ['processingcontext',['ProcessingContext',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a319c1f5f2461f9fb7cce851dbcb8d7d2',1,'DOKAN_FILE_INFO']]]
+  ['nameinformation_0',['NameInformation',['../struct_f_i_l_e___a_l_l___i_n_f_o_r_m_a_t_i_o_n.html#aa167b6d84f4197394508bffd59d57cad',1,'FILE_ALL_INFORMATION']]],
+  ['network_20provider_1',['Network Provider',['../index.html#autotoc_md6',1,'']]],
+  ['nextentryoffset_2',['NextEntryOffset',['../struct_f_i_l_e___d_i_r_e_c_t_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html#a39d2817a2141a25d281bc34630a03e9c',1,'FILE_DIRECTORY_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___f_u_l_l___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a3d0ee3903ec614a4d8ad5deb2464100f',1,'FILE_FULL_DIR_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___i_d___f_u_l_l___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a04af79dbf88e52a6db45bd423186d432',1,'FILE_ID_FULL_DIR_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#ab8ce6f8e6e0f12807fe9c7b7912ff5fb',1,'FILE_BOTH_DIR_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___i_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a5dab91bc13ec521722db82b6640a5e7e',1,'FILE_ID_BOTH_DIR_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___i_d___e_x_t_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a45f6a1f69ea0c1166779f488bedae797',1,'FILE_ID_EXTD_BOTH_DIR_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___n_a_m_e_s___i_n_f_o_r_m_a_t_i_o_n.html#ac9c31d9b43c75972b95a8f690319eef9',1,'FILE_NAMES_INFORMATION::NextEntryOffset'],['../struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html#afae40b88e123eb762ca37688870a7e06',1,'FILE_STREAM_INFORMATION::NextEntryOffset']]],
+  ['nocache_3',['Nocache',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#ae714470f93942f19a73f9c15bc031746',1,'DOKAN_FILE_INFO']]],
+  ['notify_4',['Dokan Notify',['../group___dokan_notify.html',1,'']]],
+  ['notifyhandle_5',['NotifyHandle',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ac40c01f02223d35b03420dfe87273766',1,'DOKAN_INSTANCE']]],
+  ['numberofbytestransferred_6',['NumberOfBytesTransferred',['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html#a84e5418b9545cb23f58803e85531d334',1,'DOKAN_IO_BATCH']]],
+  ['numberoflinks_7',['NumberOfLinks',['../struct_f_i_l_e___s_t_a_n_d_a_r_d___i_n_f_o_r_m_a_t_i_o_n.html#a5523b56228e171d7d99beb7b9edb5052',1,'FILE_STANDARD_INFORMATION']]]
 ];

@@ -1,10 +1,24 @@
 var searchData=
 [
-  ['uncname',['UNCName',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#afa11cd3d0e4af28ec8d7e2577953df69',1,'DOKAN_OPTIONS::UNCName()'],['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a691f1e621408f0a9f30d38df35a20d04',1,'DOKAN_INSTANCE::UNCName()']]],
-  ['unicode_5fstring',['UNICODE_STRING',['../struct_u_n_i_c_o_d_e___s_t_r_i_n_g.html',1,'']]],
-  ['unimplementedfindfileswithpattern',['UnimplementedFindFilesWithPattern',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#a5ac57423b2112d0be9eb3f8ef6783ce3',1,'DOKAN_OPEN_INFO']]],
-  ['unlockfile',['UnlockFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a267dd56af4da19e93db535e4091d7737',1,'DOKAN_OPERATIONS']]],
-  ['unmounted',['Unmounted',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a84302512a77f83d10cfd33c33f0f33a7',1,'DOKAN_OPERATIONS']]],
-  ['unmountedcalled',['UnmountedCalled',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a4f975f582e7b8061b0f8571fc10df448',1,'DOKAN_INSTANCE']]],
-  ['usercontext',['UserContext',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#a6c78c322fb6d6329fe485fe131406011',1,'DOKAN_OPEN_INFO']]]
+  ['sectorsize_0',['SectorSize',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#af32958deda4f26862bed52b654de9f94',1,'DOKAN_OPTIONS']]],
+  ['sectorsperallocationunit_1',['SectorsPerAllocationUnit',['../struct_f_i_l_e___f_s___s_i_z_e___i_n_f_o_r_m_a_t_i_o_n.html#a61796ce3170b17cd9da0fb23ef78fc55',1,'FILE_FS_SIZE_INFORMATION::SectorsPerAllocationUnit'],['../struct_f_i_l_e___f_s___f_u_l_l___s_i_z_e___i_n_f_o_r_m_a_t_i_o_n.html#a94633a113dd12f5a0ed7c89c2108919d',1,'FILE_FS_FULL_SIZE_INFORMATION::SectorsPerAllocationUnit']]],
+  ['setallocationsize_2',['SetAllocationSize',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#abeebaa9c90c0fdf635a87e841831bef9',1,'DOKAN_OPERATIONS']]],
+  ['setendoffile_3',['SetEndOfFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a757fbbc2fe4f96a2cf26a53ec5118e03',1,'DOKAN_OPERATIONS']]],
+  ['setfileattributes_4',['SetFileAttributes',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a393752dca2136a99034a0d6ad0205b22',1,'DOKAN_OPERATIONS']]],
+  ['setfilesecurity_5',['SetFileSecurity',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aaf96e8ff23df78ffe7b21e987bc7df1c',1,'DOKAN_OPERATIONS']]],
+  ['setfiletime_6',['SetFileTime',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae373e5369085317204389c7aaaf6edb8',1,'DOKAN_OPERATIONS']]],
+  ['shortname_7',['ShortName',['../struct_f_i_l_e___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#aa660045ca3ac63ebdffad3966fc285f5',1,'FILE_BOTH_DIR_INFORMATION::ShortName'],['../struct_f_i_l_e___i_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#aec41ad89c6f571c576c273c82d1762ba',1,'FILE_ID_BOTH_DIR_INFORMATION::ShortName'],['../struct_f_i_l_e___i_d___e_x_t_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#aeeda83008dd750ff9b58d7f9bfc74620',1,'FILE_ID_EXTD_BOTH_DIR_INFORMATION::ShortName']]],
+  ['shortnamelength_8',['ShortNameLength',['../struct_f_i_l_e___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a4c98ba15a4c96d52d67f552025771685',1,'FILE_BOTH_DIR_INFORMATION::ShortNameLength'],['../struct_f_i_l_e___i_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a226819d94ad27db19d5932bd2516adc1',1,'FILE_ID_BOTH_DIR_INFORMATION::ShortNameLength'],['../struct_f_i_l_e___i_d___e_x_t_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#a335e0a394f465cac3669e25fce4477a5',1,'FILE_ID_EXTD_BOTH_DIR_INFORMATION::ShortNameLength']]],
+  ['singlethread_9',['SingleThread',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#a877c4897df1b4eebff31e2df33fba0c2',1,'DOKAN_OPTIONS']]],
+  ['standardinformation_10',['StandardInformation',['../struct_f_i_l_e___a_l_l___i_n_f_o_r_m_a_t_i_o_n.html#a545ef4a4d836dfaedf34c91ea50bf49b',1,'FILE_ALL_INFORMATION']]],
+  ['streamallocationsize_11',['StreamAllocationSize',['../struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html#a2445d8fb1f6e8716b93355fa529a2c78',1,'FILE_STREAM_INFORMATION']]],
+  ['streamname_12',['StreamName',['../struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html#a2f1a43fc76ad40732562d16e16645c3f',1,'FILE_STREAM_INFORMATION']]],
+  ['streamnamelength_13',['StreamNameLength',['../struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html#a36951dbcf016df70b5d2a7742b7c7275',1,'FILE_STREAM_INFORMATION']]],
+  ['streamsize_14',['StreamSize',['../struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html#ace737710af9d29892d671ee23230a252',1,'FILE_STREAM_INFORMATION']]],
+  ['substitutenamelength_15',['SubstituteNameLength',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_symbolic_link_reparse_buffer.html#a3032000e727ca6da43b1a6674cee81e4',1,'REPARSE_DATA_BUFFER::[union].__unnamed0__::[struct].__unnamed0__.SymbolicLinkReparseBuffer::SubstituteNameLength'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_mount_point_reparse_buffer.html#a8fd2c84bbe010255f1b4fa39680ebc40',1,'REPARSE_DATA_BUFFER::[union].__unnamed0__::[struct].__unnamed0__.MountPointReparseBuffer::SubstituteNameLength']]],
+  ['substitutenameoffset_16',['SubstituteNameOffset',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_symbolic_link_reparse_buffer.html#a2c1058c698b50191d52c5312da6cef04',1,'REPARSE_DATA_BUFFER::[union].__unnamed0__::[struct].__unnamed0__.SymbolicLinkReparseBuffer::SubstituteNameOffset'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_mount_point_reparse_buffer.html#a92c815de72bf8358d0e74b4e27761e2b',1,'REPARSE_DATA_BUFFER::[union].__unnamed0__::[struct].__unnamed0__.MountPointReparseBuffer::SubstituteNameOffset']]],
+  ['supportsobjects_17',['SupportsObjects',['../struct_f_i_l_e___f_s___v_o_l_u_m_e___i_n_f_o_r_m_a_t_i_o_n.html#a40f7c7656b6feab56ed5163e4adfbc70',1,'FILE_FS_VOLUME_INFORMATION']]],
+  ['synchronousio_18',['SynchronousIo',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#ab84fc040859543b7bd81ddb480d9f9a4',1,'DOKAN_FILE_INFO']]],
+  ['system_19',['Testing a File System',['../index.html#autotoc_md7',1,'']]],
+  ['systems_20',['How to create file systems',['../index.html#autotoc_md0',1,'']]]
 ];

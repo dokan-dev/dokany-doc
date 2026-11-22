@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['threadinfo',['ThreadInfo',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a969a90977e34f915c7e745b78fc2d41a',1,'DOKAN_INSTANCE']]],
-  ['timeout',['Timeout',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#ad953734dbc1baf170937eec8c1b4228b',1,'DOKAN_OPTIONS']]],
-  ['totalallocationunits',['TotalAllocationUnits',['../struct_f_i_l_e___f_s___s_i_z_e___i_n_f_o_r_m_a_t_i_o_n.html#ad89b492bcab5fc2fc04d9872c74872a9',1,'FILE_FS_SIZE_INFORMATION::TotalAllocationUnits()'],['../struct_f_i_l_e___f_s___f_u_l_l___s_i_z_e___i_n_f_o_r_m_a_t_i_o_n.html#a58d34981394b2768d21e7ddbdfbce0a8',1,'FILE_FS_FULL_SIZE_INFORMATION::TotalAllocationUnits()']]]
+  ['readfile_0',['ReadFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a395ea30a11214edd113b3cd55b5759cd',1,'DOKAN_OPERATIONS']]],
+  ['reparse_5fdata_5fbuffer_1',['REPARSE_DATA_BUFFER',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html',1,'']]],
+  ['reparsedatalength_2',['ReparseDataLength',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#a1be0389ceec5ec1ef98024f1d58413fe',1,'REPARSE_DATA_BUFFER']]],
+  ['reparsepointtag_3',['ReparsePointTag',['../struct_f_i_l_e___i_d___e_x_t_d___b_o_t_h___d_i_r___i_n_f_o_r_m_a_t_i_o_n.html#af94a51bb6115959e1c4fd20cebd1da16',1,'FILE_ID_EXTD_BOTH_DIR_INFORMATION']]],
+  ['reparsetag_4',['ReparseTag',['../struct_f_i_l_e___a_t_t_r_i_b_u_t_e___t_a_g___i_n_f_o_r_m_a_t_i_o_n.html#a1828603c50dbf6555ef5bed827acd318',1,'FILE_ATTRIBUTE_TAG_INFORMATION::ReparseTag'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#a0f12f0442ad043292f2dfdafd9b5e736',1,'REPARSE_DATA_BUFFER::ReparseTag']]],
+  ['replaceifexists_5',['ReplaceIfExists',['../struct_f_i_l_e___l_i_n_k___i_n_f_o_r_m_a_t_i_o_n.html#a2802d97da1a7b92f69ee98175e7972a7',1,'FILE_LINK_INFORMATION::ReplaceIfExists'],['../struct_f_i_l_e___r_e_n_a_m_e___i_n_f_o_r_m_a_t_i_o_n.html#ac81fd5664d2186f2a7b8dbc56b7db817',1,'FILE_RENAME_INFORMATION::ReplaceIfExists']]],
+  ['reserved_6',['Reserved',['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r.html#a93df2e0335486de91a5a643cf27dda40',1,'REPARSE_DATA_BUFFER']]],
+  ['rootdirectory_7',['RootDirectory',['../struct_f_i_l_e___l_i_n_k___i_n_f_o_r_m_a_t_i_o_n.html#ad116ef591e59931220ee2fd1bc7eceb3',1,'FILE_LINK_INFORMATION::RootDirectory'],['../struct_f_i_l_e___r_e_n_a_m_e___i_n_f_o_r_m_a_t_i_o_n.html#a371cd89db86ee741ec233bac72747efc',1,'FILE_RENAME_INFORMATION::RootDirectory']]]
 ];

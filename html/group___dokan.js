@@ -1,0 +1,28 @@
+var group___dokan =
+[
+    [ "Dokan Notify", "group___dokan_notify.html", "group___dokan_notify" ],
+    [ "DOKAN_DRIVER_NAME", "group___dokan.html#ga3e02f6c84b22b39d0458be91ca128e5b", null ],
+    [ "DOKAN_MINIMUM_COMPATIBLE_VERSION", "group___dokan.html#gaab6d243f4854d0162867d2b6940e004b", null ],
+    [ "DOKAN_NP_NAME", "group___dokan.html#ga86ea525cad934c5998d65263e0a06bec", null ],
+    [ "DOKAN_VERSION", "group___dokan.html#ga62a8c5e57382c969e686a040e7cd4bf2", null ],
+    [ "DokanCloseHandle", "group___dokan.html#ga0f238772042c20ff5ebf6eb3391d555d", null ],
+    [ "DokanCreateFileSystem", "group___dokan.html#gaf4f6361fa86397a54471eb9b5d4259c3", null ],
+    [ "DokanDriverVersion", "group___dokan.html#ga51cbe6e697d53ecb91be1f3780d2bcca", null ],
+    [ "DokanGetMountPointList", "group___dokan.html#gaafe0e4fde9e4a8f61c19c873ce29e2ae", null ],
+    [ "DokanInit", "group___dokan.html#ga601e46032af44a7053a0ed1cd7a8f910", null ],
+    [ "DokanIsFileSystemRunning", "group___dokan.html#ga4de34ef862dd5e58017f93f971e4a45a", null ],
+    [ "DokanIsNameInExpression", "group___dokan.html#ga2e8585b8730ee74c0cd0cadf3e8cb01a", null ],
+    [ "DokanMain", "group___dokan.html#ga099fb73df80893f9da337a2dd7a6634e", null ],
+    [ "DokanMapKernelToUserCreateFileFlags", "group___dokan.html#gaf8272128a34921d9514861363f0e22c0", null ],
+    [ "DokanNtStatusFromWin32", "group___dokan.html#ga1bcba8145ee5205cd41fa5eebdffaa82", null ],
+    [ "DokanOpenRequestorToken", "group___dokan.html#ga09859474c6ffee4fdc318e47e30c1a03", null ],
+    [ "DokanRegisterWaitForFileSystemClosed", "group___dokan.html#gad62af4c22ee4c984251dcae1f85abf49", null ],
+    [ "DokanReleaseMountPointList", "group___dokan.html#ga69a6f398c65b17c0ce908aaa23dd817c", null ],
+    [ "DokanRemoveMountPoint", "group___dokan.html#ga5b47eeb4d113e9981b11e4c22890027f", null ],
+    [ "DokanResetTimeout", "group___dokan.html#ga1d5b0bf526fbf143a726fe1816fe7f15", null ],
+    [ "DokanShutdown", "group___dokan.html#ga03eb16c0f047a74c180217284436d4a3", null ],
+    [ "DokanUnmount", "group___dokan.html#gae9ed3293f6830c8ace6419082434128a", null ],
+    [ "DokanUnregisterWaitForFileSystemClosed", "group___dokan.html#gabbec14f5b5eb7276aea10d9284380f0b", null ],
+    [ "DokanVersion", "group___dokan.html#gab90d8e0673436901756384a2ebe8ee18", null ],
+    [ "DokanWaitForFileSystemClosed", "group___dokan.html#ga08219725d8c34a26ef88c337fdb18188", null ]
+];

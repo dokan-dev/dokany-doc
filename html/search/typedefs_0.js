@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pfillfinddata',['PFillFindData',['../dokan_8h.html#a742c3cc39a0b8758075d8533c91ff13b',1,'dokan.h']]],
-  ['pfillfindstreamdata',['PFillFindStreamData',['../dokan_8h.html#a296f0a5a4f27d2a985f7c9128eec58a0',1,'dokan.h']]]
+  ['pfillfinddata_0',['PFillFindData',['../dokan_8h.html#ac4cbd4a8c5a57ead61c1bbe25abe2213',1,'dokan.h']]],
+  ['pfillfindstreamdata_1',['PFillFindStreamData',['../dokan_8h.html#a18b63b19c1e62b204a62c2f5ba1a9d36',1,'dokan.h']]]
 ];
