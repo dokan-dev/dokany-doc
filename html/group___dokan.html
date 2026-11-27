@@ -343,7 +343,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get active Dokan mount points. </p>
-<p>Returned array need to be released by calling <a class="el" href="#ga69a6f398c65b17c0ce908aaa23dd817c" title="DokanReleaseMountPointList">DokanReleaseMountPointList</a></p>
+<p>Returned array needs to be released by calling <a class="el" href="#ga69a6f398c65b17c0ce908aaa23dd817c" title="DokanReleaseMountPointList">DokanReleaseMountPointList</a>. When no matching mount points exist, this function returns a valid non-NULL allocation with <code>*nbRead</code> set to 0, which must still be released with <a class="el" href="#ga69a6f398c65b17c0ce908aaa23dd817c" title="DokanReleaseMountPointList">DokanReleaseMountPointList</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uncOnly</td><td>Get only instances that have UNC Name. </td></tr>
@@ -351,7 +351,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Allocate array of DOKAN_MOUNT_POINT_INFO. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Allocated array of DOKAN_MOUNT_POINT_INFO (possibly with <code>*nbRead</code> == 0 when empty), or <code>NULL</code> on error. </dd></dl>
 
 </div>
 </div>

@@ -135,7 +135,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Dokan User FS file-change notification. </p>
 <p>The application implementing the user file system can notify the Dokan kernel driver of external file- and directory-changes.</p>
 <p>For example, the mirror application can notify the driver about changes made in the mirrored directory so that those changes will be automatically reflected in the implemented mirror file system.</p>
-<p>This requires the FilePath passed to the respective DokanNotify*-functions to include the absolute path of the changed file including the drive-letter and the path to the mount point, e.g. "C:\Dokan\ChangedFile.txt".</p>
+<p>The FilePath passed to the respective DokanNotify* functions must be an absolute path targeting the mounted volume. Supported path forms are drive-letter paths (e.g. <span class="tt">M:\ChangedFile.txt</span>), NTFS directory mount point paths (e.g. <span class="tt">C:\<a class="el" href="group___dokan.html" title="Dokan Library const and methods.">Dokan</a>\ChangedFile.txt</span>), UNC paths (e.g. <span class="tt">\\server\share\ChangedFile.txt</span>), and Win32 extended-length paths (<span class="tt">\\?\...</span> and <span class="tt">\\?\UNC\...</span>). Mount prefix matching is case-insensitive using Windows ordinal comparison, and redundant trailing backslashes are normalized.</p>
 <p>These functions SHOULD NOT be called from within the implemented file system and thus be independent of any Dokan file system operation. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ga33176681a9f256fb83ad34fbac3f84d1" name="ga33176681a9f256fb83ad34fbac3f84d1"></a>

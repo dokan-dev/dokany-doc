@@ -14,5 +14,6 @@ var searchData=
   ['dokaninstance_11',['DokanInstance',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#ad9ce9aaecf3d57e6a86a787553c6363a',1,'DOKAN_OPEN_INFO::DokanInstance'],['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html#ab585dec10417eee87a1f8c5a1a1daf79',1,'DOKAN_IO_BATCH::DokanInstance'],['../struct_d_o_k_a_n___i_o___e_v_e_n_t.html#a0e7f13c935ddf5464faacae080972937',1,'DOKAN_IO_EVENT::DokanInstance']]],
   ['dokanopeninfo_12',['DokanOpenInfo',['../struct_d_o_k_a_n___i_o___e_v_e_n_t.html#aa6b168bc417aa2ffe96474255d811e96',1,'DOKAN_IO_EVENT']]],
   ['dokanoperations_13',['DokanOperations',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#ae42810a4e5c514903e52be9afdb78473',1,'DOKAN_INSTANCE']]],
-  ['dokanoptions_14',['DokanOptions',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a828c70044de9d74b50bcbfcff5e80ca7',1,'DOKAN_FILE_INFO::DokanOptions'],['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a84102e59607dc0f43fdfe19c49db2f96',1,'DOKAN_INSTANCE::DokanOptions']]]
+  ['dokanoptions_14',['DokanOptions',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a828c70044de9d74b50bcbfcff5e80ca7',1,'DOKAN_FILE_INFO::DokanOptions'],['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a84102e59607dc0f43fdfe19c49db2f96',1,'DOKAN_INSTANCE::DokanOptions']]],
+  ['driveletter_15',['DriveLetter',['../struct_d_o_k_a_n___b_r_o_a_d_c_a_s_t___c_o_n_t_e_x_t.html#afc5b8a9bc78cc936889a70955ed3d346',1,'DOKAN_BROADCAST_CONTEXT']]]
 ];

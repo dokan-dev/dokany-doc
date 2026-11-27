@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "DOKAN_INSTANCE_THREADINFO", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e___t_h_r_e_a_d_i_n_f_o.html", null ],
+    [ "PDOKAN_BROADCAST_CONTEXT", "struct_d_o_k_a_n___b_r_o_a_d_c_a_s_t___c_o_n_t_e_x_t.html", "struct_d_o_k_a_n___b_r_o_a_d_c_a_s_t___c_o_n_t_e_x_t" ],
     [ "PDOKAN_FILE_INFO", "struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html", "struct_d_o_k_a_n___f_i_l_e___i_n_f_o" ],
     [ "PDOKAN_FIND_STREAM_CONTEXT", "struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t.html", "struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t" ],
     [ "PDOKAN_INSTANCE", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e" ],

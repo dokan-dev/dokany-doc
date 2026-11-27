@@ -1,5 +1,6 @@
 var struct_d_o_k_a_n___i_n_s_t_a_n_c_e =
 [
+    [ "AllowIpcBatching", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a092309afd39ad8734239ea4b307cc371", null ],
     [ "CriticalSection", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a870a908cf383f8b7256f954fe91e0493", null ],
     [ "Device", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#abd3f55c8bff327c35ee1fffe6499d23e", null ],
     [ "DeviceClosedWaitHandle", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#aeb7f2b271c2560f60ab8b89749a8672c", null ],
