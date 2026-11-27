@@ -48,11 +48,9 @@ var searchData=
   ['filesystemnamelength_45',['FileSystemNameLength',['../struct_f_i_l_e___f_s___a_t_t_r_i_b_u_t_e___i_n_f_o_r_m_a_t_i_o_n.html#ab9b1e3c819ea6b50d8534f1a235401f0',1,'FILE_FS_ATTRIBUTE_INFORMATION']]],
   ['filesystemstopped_46',['FileSystemStopped',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a34581f8dfcb149c54b6455dc35da260c',1,'DOKAN_INSTANCE']]],
   ['find_20files_47',['Find Files',['../index.html#autotoc_md3',1,'']]],
-  ['finddata_48',['FindData',['../struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html#a24d034ba1b515b79e827ec2086f6a868',1,'DOKAN_FIND_DATA']]],
-  ['findfiles_49',['FindFiles',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae7424ea30de7816a86d1411b686b550b',1,'DOKAN_OPERATIONS']]],
-  ['findfileswithpattern_50',['FindFilesWithPattern',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a06f2c18d8c0e083e629d0133f4ded84d',1,'DOKAN_OPERATIONS']]],
-  ['findstreamdata_51',['FindStreamData',['../struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a.html#afb4e71813b706c10eca2ae7633298018',1,'DOKAN_FIND_STREAM_DATA']]],
-  ['findstreams_52',['FindStreams',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ad477b6a763be8e0303b7d735563bba67',1,'DOKAN_OPERATIONS']]],
-  ['flags_53',['Flags',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html#a67973c9df752927108577dfb6096a89c',1,'FILE_DISPOSITION_INFORMATION_EX::Flags'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_symbolic_link_reparse_buffer.html#a8ccf6c10d02edf829c7f5f884bb4b648',1,'REPARSE_DATA_BUFFER::[union].__unnamed0__::[struct].__unnamed0__.SymbolicLinkReparseBuffer::Flags']]],
-  ['flushfilebuffers_54',['FlushFileBuffers',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa7c547a9716eaea111cf678dc6c274c5',1,'DOKAN_OPERATIONS']]]
+  ['findfiles_48',['FindFiles',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ae7424ea30de7816a86d1411b686b550b',1,'DOKAN_OPERATIONS']]],
+  ['findfileswithpattern_49',['FindFilesWithPattern',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a06f2c18d8c0e083e629d0133f4ded84d',1,'DOKAN_OPERATIONS']]],
+  ['findstreams_50',['FindStreams',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ad477b6a763be8e0303b7d735563bba67',1,'DOKAN_OPERATIONS']]],
+  ['flags_51',['Flags',['../struct_f_i_l_e___d_i_s_p_o_s_i_t_i_o_n___i_n_f_o_r_m_a_t_i_o_n___e_x.html#a67973c9df752927108577dfb6096a89c',1,'FILE_DISPOSITION_INFORMATION_EX::Flags'],['../struct_r_e_p_a_r_s_e___d_a_t_a___b_u_f_f_e_r_1_1_0fstruct_0e_8____unnamed0_____8_symbolic_link_reparse_buffer.html#a8ccf6c10d02edf829c7f5f884bb4b648',1,'REPARSE_DATA_BUFFER::[union].__unnamed0__::[struct].__unnamed0__.SymbolicLinkReparseBuffer::Flags']]],
+  ['flushfilebuffers_52',['FlushFileBuffers',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa7c547a9716eaea111cf678dc6c274c5',1,'DOKAN_OPERATIONS']]]
 ];

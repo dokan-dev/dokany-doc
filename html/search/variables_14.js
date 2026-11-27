@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zwcreatefile_0',['ZwCreateFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#aa1d34023f9187ed6b62c10003f7b99d5',1,'DOKAN_OPERATIONS']]]
+  ['writefile_0',['WriteFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#a2ee913b25034827f6b35c43a1225666c',1,'DOKAN_OPERATIONS']]],
+  ['writetoendoffile_1',['WriteToEndOfFile',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html#a1ddeeefe1bf5ae462389f32eb6dd303a',1,'DOKAN_FILE_INFO']]]
 ];

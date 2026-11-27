@@ -1,14 +1,13 @@
 var searchData=
 [
   ['dokan_5ffile_5finfo_0',['DOKAN_FILE_INFO',['../struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html',1,'']]],
-  ['dokan_5ffind_5fdata_1',['DOKAN_FIND_DATA',['../struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html',1,'']]],
-  ['dokan_5ffind_5fstream_5fdata_2',['DOKAN_FIND_STREAM_DATA',['../struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a.html',1,'']]],
-  ['dokan_5finstance_3',['DOKAN_INSTANCE',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html',1,'']]],
-  ['dokan_5finstance_5fthreadinfo_4',['DOKAN_INSTANCE_THREADINFO',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e___t_h_r_e_a_d_i_n_f_o.html',1,'']]],
-  ['dokan_5fio_5fbatch_5',['DOKAN_IO_BATCH',['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html',1,'']]],
-  ['dokan_5fio_5fevent_6',['DOKAN_IO_EVENT',['../struct_d_o_k_a_n___i_o___e_v_e_n_t.html',1,'']]],
-  ['dokan_5fopen_5finfo_7',['DOKAN_OPEN_INFO',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html',1,'']]],
-  ['dokan_5foperations_8',['DOKAN_OPERATIONS',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html',1,'']]],
-  ['dokan_5foptions_9',['DOKAN_OPTIONS',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html',1,'']]],
-  ['dokan_5fvector_10',['DOKAN_VECTOR',['../struct_d_o_k_a_n___v_e_c_t_o_r.html',1,'']]]
+  ['dokan_5ffind_5fstream_5fcontext_1',['DOKAN_FIND_STREAM_CONTEXT',['../struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t.html',1,'']]],
+  ['dokan_5finstance_2',['DOKAN_INSTANCE',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html',1,'']]],
+  ['dokan_5finstance_5fthreadinfo_3',['DOKAN_INSTANCE_THREADINFO',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e___t_h_r_e_a_d_i_n_f_o.html',1,'']]],
+  ['dokan_5fio_5fbatch_4',['DOKAN_IO_BATCH',['../struct_d_o_k_a_n___i_o___b_a_t_c_h.html',1,'']]],
+  ['dokan_5fio_5fevent_5',['DOKAN_IO_EVENT',['../struct_d_o_k_a_n___i_o___e_v_e_n_t.html',1,'']]],
+  ['dokan_5fopen_5finfo_6',['DOKAN_OPEN_INFO',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html',1,'']]],
+  ['dokan_5foperations_7',['DOKAN_OPERATIONS',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html',1,'']]],
+  ['dokan_5foptions_8',['DOKAN_OPTIONS',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html',1,'']]],
+  ['dokan_5fvector_9',['DOKAN_VECTOR',['../struct_d_o_k_a_n___v_e_c_t_o_r.html',1,'']]]
 ];

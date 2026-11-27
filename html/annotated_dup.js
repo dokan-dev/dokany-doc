@@ -2,8 +2,7 @@ var annotated_dup =
 [
     [ "DOKAN_INSTANCE_THREADINFO", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e___t_h_r_e_a_d_i_n_f_o.html", null ],
     [ "PDOKAN_FILE_INFO", "struct_d_o_k_a_n___f_i_l_e___i_n_f_o.html", "struct_d_o_k_a_n___f_i_l_e___i_n_f_o" ],
-    [ "PDOKAN_FIND_DATA", "struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html", "struct_d_o_k_a_n___f_i_n_d___d_a_t_a" ],
-    [ "PDOKAN_FIND_STREAM_DATA", "struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a.html", "struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___d_a_t_a" ],
+    [ "PDOKAN_FIND_STREAM_CONTEXT", "struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t.html", "struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t" ],
     [ "PDOKAN_INSTANCE", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html", "struct_d_o_k_a_n___i_n_s_t_a_n_c_e" ],
     [ "PDOKAN_IO_BATCH", "struct_d_o_k_a_n___i_o___b_a_t_c_h.html", "struct_d_o_k_a_n___i_o___b_a_t_c_h" ],
     [ "PDOKAN_IO_EVENT", "struct_d_o_k_a_n___i_o___e_v_e_n_t.html", "struct_d_o_k_a_n___i_o___e_v_e_n_t" ],

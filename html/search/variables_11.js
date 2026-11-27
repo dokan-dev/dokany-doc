@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['uncname_0',['UNCName',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#afa11cd3d0e4af28ec8d7e2577953df69',1,'DOKAN_OPTIONS::UNCName'],['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a691f1e621408f0a9f30d38df35a20d04',1,'DOKAN_INSTANCE::UNCName']]],
-  ['unimplementedfindfileswithpattern_1',['UnimplementedFindFilesWithPattern',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#a5ac57423b2112d0be9eb3f8ef6783ce3',1,'DOKAN_OPEN_INFO']]],
-  ['unlockfile_2',['UnlockFile',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ab181becb6f42bdbd65dabd7ad0152bd7',1,'DOKAN_OPERATIONS']]],
-  ['unmounted_3',['Unmounted',['../struct_d_o_k_a_n___o_p_e_r_a_t_i_o_n_s.html#ab150ca81060acffe6e5d0b87c9a9b90d',1,'DOKAN_OPERATIONS']]],
-  ['unmountedcalled_4',['UnmountedCalled',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a4f975f582e7b8061b0f8571fc10df448',1,'DOKAN_INSTANCE']]],
-  ['usercontext_5',['UserContext',['../struct_d_o_k_a_n___o_p_e_n___i_n_f_o.html#a6c78c322fb6d6329fe485fe131406011',1,'DOKAN_OPEN_INFO']]]
+  ['threadinfo_0',['ThreadInfo',['../struct_d_o_k_a_n___i_n_s_t_a_n_c_e.html#a969a90977e34f915c7e745b78fc2d41a',1,'DOKAN_INSTANCE']]],
+  ['timeout_1',['Timeout',['../struct_d_o_k_a_n___o_p_t_i_o_n_s.html#ad953734dbc1baf170937eec8c1b4228b',1,'DOKAN_OPTIONS']]],
+  ['totalallocationunits_2',['TotalAllocationUnits',['../struct_f_i_l_e___f_s___s_i_z_e___i_n_f_o_r_m_a_t_i_o_n.html#ad89b492bcab5fc2fc04d9872c74872a9',1,'FILE_FS_SIZE_INFORMATION::TotalAllocationUnits'],['../struct_f_i_l_e___f_s___f_u_l_l___s_i_z_e___i_n_f_o_r_m_a_t_i_o_n.html#a58d34981394b2768d21e7ddbdfbce0a8',1,'FILE_FS_FULL_SIZE_INFORMATION::TotalAllocationUnits']]]
 ];

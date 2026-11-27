@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dokan: PDOKAN_FIND_DATA Struct Reference</title>
+<title>Dokan: PDOKAN_FIND_STREAM_CONTEXT Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', codefold.init);
   </div>
 </div>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html','',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -111,54 +111,117 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_d_o_k_a
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">PDOKAN_FIND_DATA Struct Reference</div></div>
+  <div class="headertitle"><div class="title">PDOKAN_FIND_STREAM_CONTEXT Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Dokan find file list.  
+<p>Context for filling <a class="el" href="struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html" title="Used to enumerate the streams for a file.">FILE_STREAM_INFORMATION</a> entries during a FindStreams dispatch.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a24d034ba1b515b79e827ec2086f6a868" id="r_a24d034ba1b515b79e827ec2086f6a868"><td class="memItemLeft">WIN32_FIND_DATAW&#160;</td><td class="memItemRight"><a class="el" href="#a24d034ba1b515b79e827ec2086f6a868">FindData</a></td></tr>
-<tr class="memitem:a48928a4bc877e3c8a71b8ca6466e0cd0" id="r_a48928a4bc877e3c8a71b8ca6466e0cd0"><td class="memItemLeft">LIST_ENTRY&#160;</td><td class="memItemRight"><a class="el" href="#a48928a4bc877e3c8a71b8ca6466e0cd0">ListEntry</a></td></tr>
+<tr class="memitem:a67413820edbfd6eddbdcee91c632f35c" id="r_a67413820edbfd6eddbdcee91c632f35c"><td class="memItemLeft">PDOKAN_IO_EVENT&#160;</td><td class="memItemRight"><a class="el" href="#a67413820edbfd6eddbdcee91c632f35c">IoEvent</a></td></tr>
+<tr class="memitem:a8a9d663d62c12be4c5082a8c57eba455" id="r_a8a9d663d62c12be4c5082a8c57eba455"><td class="memItemLeft">ULONG&#160;</td><td class="memItemRight"><a class="el" href="#a8a9d663d62c12be4c5082a8c57eba455">ResultBufferSize</a></td></tr>
+<tr class="memitem:af79e037f40257341c41e42df2c8a2bc5" id="r_af79e037f40257341c41e42df2c8a2bc5"><td class="memItemLeft">ULONG&#160;</td><td class="memItemRight"><a class="el" href="#af79e037f40257341c41e42df2c8a2bc5">LastEntryOffset</a></td></tr>
+<tr class="memitem:a85761836c1e29b200205bd706014525a" id="r_a85761836c1e29b200205bd706014525a"><td class="memItemLeft">ULONG&#160;</td><td class="memItemRight"><a class="el" href="#a85761836c1e29b200205bd706014525a">LastUnalignedSize</a></td></tr>
+<tr class="memitem:ad4f6278ef602daee77bfb8323e30c3bd" id="r_ad4f6278ef602daee77bfb8323e30c3bd"><td class="memItemLeft">BOOL&#160;</td><td class="memItemRight"><a class="el" href="#ad4f6278ef602daee77bfb8323e30c3bd">HasEntries</a></td></tr>
+<tr class="memitem:aebb44a72d22502804247b2f2fbc9822e" id="r_aebb44a72d22502804247b2f2fbc9822e"><td class="memItemLeft">BOOL&#160;</td><td class="memItemRight"><a class="el" href="#aebb44a72d22502804247b2f2fbc9822e">Overflowed</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Dokan find file list. </p>
-<p>Used by FindFiles </p>
+<div class="textblock"><p>Context for filling <a class="el" href="struct_f_i_l_e___s_t_r_e_a_m___i_n_f_o_r_m_a_t_i_o_n.html" title="Used to enumerate the streams for a file.">FILE_STREAM_INFORMATION</a> entries during a FindStreams dispatch. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
-<a id="a24d034ba1b515b79e827ec2086f6a868" name="a24d034ba1b515b79e827ec2086f6a868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24d034ba1b515b79e827ec2086f6a868">&#9670;&#160;</a></span>FindData</h2>
+<a id="ad4f6278ef602daee77bfb8323e30c3bd" name="ad4f6278ef602daee77bfb8323e30c3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f6278ef602daee77bfb8323e30c3bd">&#9670;&#160;</a></span>HasEntries</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WIN32_FIND_DATAW PDOKAN_FIND_DATA::FindData</td>
+          <td class="memname">BOOL PDOKAN_FIND_STREAM_CONTEXT::HasEntries</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>File data information link </p>
+<p>Whether at least one complete stream entry has been written. </p>
 
 </div>
 </div>
-<a id="a48928a4bc877e3c8a71b8ca6466e0cd0" name="a48928a4bc877e3c8a71b8ca6466e0cd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48928a4bc877e3c8a71b8ca6466e0cd0">&#9670;&#160;</a></span>ListEntry</h2>
+<a id="a67413820edbfd6eddbdcee91c632f35c" name="a67413820edbfd6eddbdcee91c632f35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67413820edbfd6eddbdcee91c632f35c">&#9670;&#160;</a></span>IoEvent</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LIST_ENTRY PDOKAN_FIND_DATA::ListEntry</td>
+          <td class="memname">PDOKAN_IO_EVENT PDOKAN_FIND_STREAM_CONTEXT::IoEvent</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Current list entry informations </p>
+<p>Active IO event receiving the stream information buffer. </p>
+
+</div>
+</div>
+<a id="af79e037f40257341c41e42df2c8a2bc5" name="af79e037f40257341c41e42df2c8a2bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79e037f40257341c41e42df2c8a2bc5">&#9670;&#160;</a></span>LastEntryOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG PDOKAN_FIND_STREAM_CONTEXT::LastEntryOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Byte offset of the most recently written stream entry. </p>
+
+</div>
+</div>
+<a id="a85761836c1e29b200205bd706014525a" name="a85761836c1e29b200205bd706014525a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85761836c1e29b200205bd706014525a">&#9670;&#160;</a></span>LastUnalignedSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG PDOKAN_FIND_STREAM_CONTEXT::LastUnalignedSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unaligned byte size of the most recently written stream entry. </p>
+
+</div>
+</div>
+<a id="aebb44a72d22502804247b2f2fbc9822e" name="aebb44a72d22502804247b2f2fbc9822e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb44a72d22502804247b2f2fbc9822e">&#9670;&#160;</a></span>Overflowed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL PDOKAN_FIND_STREAM_CONTEXT::Overflowed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether an entry failed to fit in the result buffer. </p>
+
+</div>
+</div>
+<a id="a8a9d663d62c12be4c5082a8c57eba455" name="a8a9d663d62c12be4c5082a8c57eba455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9d663d62c12be4c5082a8c57eba455">&#9670;&#160;</a></span>ResultBufferSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG PDOKAN_FIND_STREAM_CONTEXT::ResultBufferSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum byte capacity of the result buffer for this query. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><b>directory.c</b></li>
+<li><b>fileinfo.c</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -173,7 +236,7 @@ Data Fields</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="struct_d_o_k_a_n___f_i_n_d___d_a_t_a.html">PDOKAN_FIND_DATA</a></li>
+    <li class="navelem"><a href="struct_d_o_k_a_n___f_i_n_d___s_t_r_e_a_m___c_o_n_t_e_x_t.html">PDOKAN_FIND_STREAM_CONTEXT</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
